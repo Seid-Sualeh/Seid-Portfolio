@@ -1,6 +1,6 @@
 # 🌐 Seid Sualeh Portfolio
 
-![Portfolio Screenshot](./image/port.png) <!-- Replace with a real screenshot path if available -->
+![Portfolio image](./image/port.png) <!-- Replace with a real screenshot path if available -->
 
 Welcome to my personal **portfolio website**!  
 I built this portfolio to showcase my skills, projects, and certifications as a **Junior Full-Stack Web Developer**.  
