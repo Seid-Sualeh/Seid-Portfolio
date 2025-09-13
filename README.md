@@ -9,7 +9,7 @@ The website is fully responsive, modern, and optimized for both desktop and mobi
 ---
 
 ## 🚀 Live Demo
-🔗 **[Visit Portfolio](https://github.com/Seid-Sualeh/My-PORTFOLIO))** 
+🔗 **[Visit Portfolio](https://seidsualeh.netlify.app/))** 
 
 
 ---
