@@ -1,6 +1,6 @@
 # 🌐 Seid Sualeh Portfolio
 
-![Portfolio Screenshot](./image/port.png) <!-- Replace with a real screenshot path if available -->
+![Portfolio image](./image/port.png) 
 
 Welcome to my personal **portfolio website**!  
 I built this portfolio to showcase my skills, projects, and certifications as a **Junior Full-Stack Web Developer**.  
@@ -9,14 +9,14 @@ The website is fully responsive, modern, and optimized for both desktop and mobi
 ---
 
 ## 🚀 Live Demo
-🔗 **[Visit Portfolio](https://github.com/Seid-Sualeh/My-PORTFOLIO))** 
+🔗 **[Visit Portfolio](https://seidsualeh.netlify.app/)** 
 
 
 ---
 
 ## ✨ Features
 ✅ Responsive design with modern UI  
-✅ Built using **HTML, CSS, Bootstrap, Tailwind**  
+✅ Built using **HTML, CSS, javascript**  
 ✅ Showcases my **skills, projects, certifications, and contact details**  
 ✅ Easy navigation with smooth scrolling  
 ✅ Optimized for performance and SEO
@@ -34,17 +34,17 @@ The website is fully responsive, modern, and optimized for both desktop and mobi
 ## 📂 Folder Structure
 root
 ├── index.html
-├── /assets
-│ ├── images
-│ └── css
+├── css
+│── images
+│── javascript
 └── README.md
 
 ---
 
 ## 📧 Contact
-💼 **LinkedIn:** [Seid Sualih](https://www.linkedin.com/in/seid-sualih)  
+💼 **LinkedIn:** [Seid Sualeh](https://www.linkedin.com/in/seid-sualeh)  
 💻 **GitHub:** [Seid-Sualeh](https://github.com/Seid-Sualeh)  
-🌐 **Portfolio:** [seidevantech.netlify.app](https://seidevantech.netlify.app)  or [seidsualeh.dev](https://seidsualeh.dev)
+🌐 **Portfolio:** [seidsualeh.netlify.app](https://seidsualeh.netlify.app)  
            
 📧 **Email:** plshireseid@gmail.com  
 
@@ -57,3 +57,4 @@ Feel free to open an **issue** or submit a **pull request**!
 ---
 
 ⭐ **If you like this project, don’t forget to star the repo!**
+
