@@ -661,3 +661,32 @@ window.addEventListener("load", function () {
   // expose config for debugging (open console)
   window.__codeParticlesConfig = config;
 })();
+
+
+
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = {
+    name: document.getElementById("name").value,
+    email: document.getElementById("email").value,
+    message: document.getElementById("message").value,
+  };
+
+  try {
+    const res = await fetch("http://localhost:5000/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    });
+
+    const data = await res.json();
+    
+    form.reset();
+  } catch (err) {
+    alert("Failed to send message!");
+  }
+});
