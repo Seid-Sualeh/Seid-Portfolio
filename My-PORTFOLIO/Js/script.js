@@ -662,9 +662,6 @@ window.addEventListener("load", function () {
   window.__codeParticlesConfig = config;
 })();
 
-
-
-
 const form = document.getElementById("contact-form");
 
 form.addEventListener("submit", async (e) => {
@@ -687,7 +684,7 @@ form.addEventListener("submit", async (e) => {
     );
 
     const data = await res.json();
-    
+
     form.reset();
   } catch (err) {
     alert("Failed to send message!");
