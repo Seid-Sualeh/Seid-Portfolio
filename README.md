@@ -17,8 +17,10 @@ The website is fully responsive, modern, and optimized for both desktop and mobi
 ## ✨ Features
 
 ✅ Responsive design with modern UI  
-✅ Built using **HTML, CSS, javascript**  
+✅ Built using **HTML, CSS, JavaScript, Bootstrap, TailwindCSS, React**  
 ✅ Showcases my **skills, projects, certifications, and contact details**  
+✅ **Interactive contact form** using EmailJS to send messages directly to my email  
+✅ **Visitor tracking** using Google Analytics to monitor site activity  
 ✅ Easy navigation with smooth scrolling  
 ✅ Optimized for performance and SEO
 
@@ -26,10 +28,11 @@ The website is fully responsive, modern, and optimized for both desktop and mobi
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML5, CSS3, Bootstrap, TailwindCSS,React,JavaScript
-- **Backend:** Node.js, MYSQL,PHP , Express.js
-- **Version Control:** Git & GitHub
-- **Deployment:** GitHub Pages
+- **Frontend:** HTML5, CSS3, Bootstrap, TailwindCSS, React, JavaScript  
+- **Backend:** Node.js, MySQL, PHP, Express.js  
+- **Version Control:** Git & GitHub  
+- **Deployment:** Netlify & GitHub Pages  
+- **Other Tools:** EmailJS (for contact form), Google Analytics (for visitor tracking)
 
 ---
 
@@ -38,9 +41,11 @@ The website is fully responsive, modern, and optimized for both desktop and mobi
 root
 ├── index.html
 ├── css
-│── images
-│── javascript
+├── images
+├── javascript
 └── README.md
+
+
 
 ---
 
@@ -48,9 +53,14 @@ root
 
 💼 **LinkedIn:** [Seid Sualeh](https://www.linkedin.com/in/seid-sualeh)  
 💻 **GitHub:** [Seid-Sualeh](https://github.com/Seid-Sualeh)  
-🌐 **Portfolio:** [seidsualeh.netlify.app](https://seidsualeh.netlify.app)
+🌐 **Portfolio:** [seidsualeh.netlify.app](https://seidsualeh.netlify.app)  
+📧 **Email:** plshireseid@gmail.com  
 
-📧 **Email:** plshireseid@gmail.com
+**Contact Form Feature:**  
+Visitors can send messages directly through the portfolio using the **interactive contact form** powered by EmailJS.  
+
+**Visitor Tracking Feature:**  
+The portfolio tracks visitor activity using **Google Analytics**, giving insights into user engagement.
 
 ---
 
