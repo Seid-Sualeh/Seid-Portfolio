@@ -662,31 +662,63 @@ window.addEventListener("load", function () {
   window.__codeParticlesConfig = config;
 })();
 
-const form = document.getElementById("contact-form");
+// const form = document.getElementById("contact-form");
 
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
+// form.addEventListener("submit", async (e) => {
+//   e.preventDefault();
 
-  const formData = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
-  };
+//   const formData = {
+//     name: document.getElementById("name").value,
+//     email: document.getElementById("email").value,
+//     message: document.getElementById("message").value,
+//   };
 
-  try {
-    const res = await fetch(
-      "https://portfolio-backend-nsmo.onrender.com/api/contact",
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      }
-    );
+//   try {
+//     const res = await fetch(
+//       "https://portfolio-backend-nsmo.onrender.com/api/contact",
+//       {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify(formData),
+//       }
+//     );
 
-    const data = await res.json();
+//     const data = await res.json();
 
-    form.reset();
-  } catch (err) {
-    alert("Failed to send message!");
-  }
-});
+//     form.reset();
+//   } catch (err) {
+//     alert("Failed to send message!");
+//   }
+// });
+
+
+
+
+
+      // Initialize EmailJS
+  (function() {
+    emailjs.init({
+      publicKey: "YOUR_PUBLIC_KEY",
+    });
+  })();
+
+  // Handle form submission
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const btn = document.getElementById("submit-button");
+    btn.textContent = "Sending...";
+
+    emailjs
+      .sendForm("service_pcvmybq ", "tamplate_56aet0a", this)
+      .then(() => {
+        alert("✅ Message sent successfully!");
+        btn.textContent = "Send Message";
+        document.getElementById("contact-form").reset();
+      })
+      .catch((error) => {
+        alert("❌ Failed to send message. Please try again.");
+        console.error(error);
+        btn.textContent = "Send Message";
+      });
+  });
