@@ -223,47 +223,81 @@ function setupFormValidation() {
         submitButton.disabled = true;
       }
 
-      setTimeout(() => {
-        form.reset();
-        formElements.forEach((el) =>
-          el.parentElement.classList.remove("focused")
-        );
+      // EmailJS sendForm integration
+      emailjs
+        .sendForm("service_vy9dq7v", "template_4r19t2s", form)
+        .then(() => {
+          form.reset();
+          formElements.forEach((el) =>
+            el.parentElement.classList.remove("focused")
+          );
 
-        const successMessage = document.createElement("div");
-        successMessage.className =
-          "p-4 bg-green-100 text-green-800 rounded-md mb-4 slide-in-top";
-        successMessage.style.padding = "1rem";
-        successMessage.style.backgroundColor = "#dcfce7";
-        successMessage.style.color = "#166534";
-        successMessage.style.borderRadius = "0.5rem";
-        successMessage.style.marginBottom = "1rem";
-        successMessage.style.transform = "translateY(-20px)";
-        successMessage.style.opacity = "0";
-        successMessage.style.transition = "all 0.5s ease";
-        successMessage.innerHTML =
-          '<i class="fas fa-check-circle mr-2"></i> Your message has been sent successfully!';
-
-        form.insertBefore(successMessage, form.firstChild);
-
-        setTimeout(() => {
-          successMessage.style.transform = "translateY(0)";
-          successMessage.style.opacity = "1";
-        }, 10);
-
-        if (submitButton) {
-          submitButton.innerHTML = "Send Message";
-          submitButton.disabled = false;
-        }
-
-        setTimeout(() => {
+          const successMessage = document.createElement("div");
+          successMessage.className =
+            "p-4 bg-green-100 text-green-800 rounded-md mb-4 slide-in-top";
+          successMessage.style.padding = "1rem";
+          successMessage.style.backgroundColor = "#dcfce7";
+          successMessage.style.color = "#166534";
+          successMessage.style.borderRadius = "0.5rem";
+          successMessage.style.marginBottom = "1rem";
           successMessage.style.transform = "translateY(-20px)";
           successMessage.style.opacity = "0";
+          successMessage.style.transition = "all 0.5s ease";
+          successMessage.innerHTML =
+            '<i class="fas fa-check-circle mr-2"></i> Your message has been sent successfully!';
+
+          form.insertBefore(successMessage, form.firstChild);
 
           setTimeout(() => {
-            successMessage.remove();
-          }, 500);
-        }, 5000);
-      }, 1500);
+            successMessage.style.transform = "translateY(0)";
+            successMessage.style.opacity = "1";
+          }, 10);
+
+          if (submitButton) {
+            submitButton.innerHTML = "Send Message";
+            submitButton.disabled = false;
+          }
+
+          setTimeout(() => {
+            successMessage.style.transform = "translateY(-20px)";
+            successMessage.style.opacity = "0";
+
+            setTimeout(() => {
+              successMessage.remove();
+            }, 500);
+          }, 5000);
+        })
+        .catch((error) => {
+          if (submitButton) {
+            submitButton.innerHTML = "Send Message";
+            submitButton.disabled = false;
+          }
+          const errorMessage = document.createElement("div");
+          errorMessage.className =
+            "p-4 bg-red-100 text-red-800 rounded-md mb-4 slide-in-top";
+          errorMessage.style.padding = "1rem";
+          errorMessage.style.backgroundColor = "#fee2e2";
+          errorMessage.style.color = "#991b1b";
+          errorMessage.style.borderRadius = "0.5rem";
+          errorMessage.style.marginBottom = "1rem";
+          errorMessage.style.transform = "translateY(-20px)";
+          errorMessage.style.opacity = "0";
+          errorMessage.style.transition = "all 0.5s ease";
+          errorMessage.innerHTML =
+            '<i class="fas fa-times-circle mr-2"></i> Failed to send message. Please try again.';
+          form.insertBefore(errorMessage, form.firstChild);
+          setTimeout(() => {
+            errorMessage.style.transform = "translateY(0)";
+            errorMessage.style.opacity = "1";
+          }, 10);
+          setTimeout(() => {
+            errorMessage.style.transform = "translateY(-20px)";
+            errorMessage.style.opacity = "0";
+            setTimeout(() => {
+              errorMessage.remove();
+            }, 500);
+          }, 5000);
+        });
     }
   });
 }
@@ -661,37 +695,3 @@ window.addEventListener("load", function () {
   // expose config for debugging (open console)
   window.__codeParticlesConfig = config;
 })();
-
-
-
-
-
-
-
-      // Initialize EmailJS
-  (function() {
-    emailjs.init({
-      publicKey: "xR0W3D-T39I7vwprA",
-    });
-  })();
-
-  // Handle form submission
-  document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    const btn = document.getElementById("submit-button");
-    btn.textContent = "Sending...";
-
-    emailjs
-      .sendForm("service_vy9dq7v", "template_4r19t2s", this)
-      .then(() => {
-       
-        btn.textContent = "Send Message";
-        document.getElementById("contact-form").reset();
-      })
-      .catch((error) => {
-      
-        console.error(error);
-        btn.textContent = "Send Message";
-      });
-  });

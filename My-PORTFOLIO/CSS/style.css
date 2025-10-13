@@ -1,3 +1,10 @@
+/* ...existing code... */
+
+/* Place after .cta-buttons .btn-primary:hover */
+.cta-buttons .btn-primary.download-resume:hover {
+  background-color: var(--accent-purple) !important;
+  color: var(--white) !important;
+}
 /* Base Styles */
 :root {
   /* Colors */
@@ -723,7 +730,10 @@ p {
 }
 
 .about-text p {
-  margin-bottom: var(--spacing-md);
+  color: black;
+}
+.dark-mode .about-text p {
+  color: white;
 }
 
 /* Skills */

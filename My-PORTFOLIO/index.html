@@ -4,18 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seid Sualeh | Full-Stack Developer</title>
-    <meta name="description" content="Seid Sualih - Full-Stack Web Developer building modern websites using React, Node.js, and MySQL.">
-<meta name="keywords" content="Seid, Web Developer, React, Node.js, Portfolio, Ethiopia">
-<!-- EmailJS CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <meta
+      name="description"
+      content="Seid Sualih - Full-Stack Web Developer building modern websites using React, Node.js, and MySQL."
+    />
+    <meta
+      name="keywords"
+      content="Seid, Web Developer, React, Node.js, Portfolio, Ethiopia"
+    />
+    <!-- EmailJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-  <script>
-    (function() {
-      // ✅ Initialize EmailJS with your public key
-      emailjs.init("xR0W3D-T39I7vwprA"); // <-- Replace with your EmailJS Public Key
-    })();
-  </script>
+    <script>
+      (function () {
+        // ✅ Initialize EmailJS with your public key
+        emailjs.init("xR0W3D-T39I7vwprA");
+      })();
+    </script>
 
     <meta
       name="description"
@@ -35,17 +40,20 @@
     <meta name="twitter:site" content="@SeidSualeh" />
     <meta name="twitter:image" content="SeidSualeh.png" />
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-D05DL0DZD9"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D05DL0DZD9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D05DL0DZD9');
-</script>
-
+      gtag("config", "G-D05DL0DZD9");
+    </script>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -138,7 +146,12 @@
             exceptional user experiences
           </p>
           <div class="cta-buttons slide-in-bottom">
-            <a href="#" class="btn-primary">Download Resume</a>
+            <a
+              href="./pdf/SEID SUALEH RESUME.pdf"
+              class="btn-primary"
+              download="SEID SUALEH RESUME.pdf"
+              >Download Resume</a
+            >
             <a href="#contact" class="btn-secondary">Contact Me</a>
           </div>
         </div>
@@ -159,31 +172,22 @@
             <img src="./image/image.png" alt="Dev Ion" />
           </div>
           <div class="about-text animate-on-scroll">
-            <!-- <p>
-              I'm a passionate web developer with over 5 years of experience
-              creating modern and responsive websites. I specialize in crafting
-              clean, efficient code and user-friendly interfaces that deliver
-              exceptional user experiences.
-            </p>
-            <p>
-              I love solving complex problems and continuously learning new
-              technologies to stay at the forefront of web development.
-            </p> -->
-
             <p>
               I’m a passionate <span>Full-Stack Web Developer</span> in training
-              with a strong background in the health sector. My journey into
-              technology started with self-learning HTML, CSS, and JavaScript,
-              and now I’m advancing into modern frameworks like React, Node.js,
-              and MongoDB through the Evangadi scholarship program.
-            </p>
-            <p>
-              I enjoy building **responsive, user-friendly, and problem-solving
-              websites** that make a real impact. My long-term goal is to use
+              with a strong foundation in both frontend and backend
+              technologies, and a background in the health sector. My journey
+              began with self-learning HTML, CSS, and JavaScript, and I am now
+              advancing into modern frameworks like React, Node.js, and MySQL.
+              through the Evangadi scholarship program.
+              </p>
+              <p>
+              I love creating beautiful, functional, and responsive websites that deliver
+              exceptional user experiences. My long-term goal is to use
               technology to create digital solutions that benefit my community
-              and open opportunities for others. Outside of coding, I enjoy
-              learning continuously, exploring educational technology, and
-              sharing knowledge with others.
+              and open opportunities for others. I’m always eager to learn new
+              technologies, improve my skills, and share knowledge with others.
+              Outside of coding, I enjoy exploring educational technology and
+              continuous learning.
             </p>
 
             <div class="skills">
@@ -214,10 +218,16 @@
                 <span class="skill-badge"
                   ><i class="fab fa-react text-info"></i> React.js</span
                 >
-
+                <span class="skill-badge"
+                  ><i class="fab fa-nextjs text-info"></i> Next.js</span
+                >
                 <span class="skill-badge"
                   ><i class="fa-solid fa-paintbrush text-secondary"></i> UI/UX
                   Design</span
+                >
+
+                <span class="skill-badge"
+                  ><i class="fa-brands fa-npm text-red"></i> NPM</span
                 >
               </div>
               <br />
@@ -240,6 +250,13 @@
                 <span class="skill-badge"
                   ><i class="fa-solid fa-plug text-success"></i> Rest API</span
                 >
+                <span class="skill-badge"
+                  ><i class="fa-brands fa-firebase text-warning"></i>
+                  Firebase</span
+                >
+                <span class="skill-badge" jwt-token="true"
+                  ><i class="fa-solid fa-key text-warning"></i> JWT</span
+                >
               </div>
               <br />
 
@@ -257,6 +274,13 @@
                 >
                 <span class="skill-badge"
                   ><i class="fa-solid fa-code text-primary"></i> VS Code</span
+                >
+                <span class="skill-badge"
+                  ><i class="fa-brands fa-chrome text-info"></i> Chrome
+                  DevTools</span
+                >
+                <span class="skill-badge"
+                  ><i class="fa-brands fa-npm text-red"></i> Postman</span
                 >
               </div>
             </div>
@@ -290,8 +314,18 @@
                 <span> Rest API</span>
               </div>
               <div class="project-links">
-                <a href="https://seidsualehntflixclone.netlify.app/" class="btn-sm" target="_blank" >Live Demo</a>
-                <a href="https://github.com/Seid-Sualeh/My-Ntflix-Project" class="btn-sm secondary" target="_blank" >GitHub</a>
+                <a
+                  href="https://seidsualehntflixclone.netlify.app/"
+                  class="btn-sm"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/Seid-Sualeh/My-Ntflix-Project"
+                  class="btn-sm secondary"
+                  target="_blank"
+                  >GitHub</a
+                >
               </div>
             </div>
           </div>
@@ -303,7 +337,10 @@
             <div class="project-info">
               <h3>Amazon Frontend and Backend</h3>
               <p>
-                A full-stack Amazon clone featuring a React frontend, RESTful API integration, Express/Node.js backend, and Firebase authentication and database. Includes modern UI with CSS and real-time data updates.
+                A full-stack Amazon clone featuring a React frontend, RESTful
+                API integration, Express/Node.js backend, and Firebase
+                authentication and database. Includes modern UI with CSS and
+                real-time data updates.
               </p>
               <div class="project-tags">
                 <span>HTML</span>
@@ -314,8 +351,18 @@
                 <span>Firebase</span>
               </div>
               <div class="project-links">
-                <a href="https://seidsualehamazonclone.netlify.app/" class="btn-sm" target="_blank" >Live Demo</a>
-                <a href="https://github.com/Seid-Sualeh/Amazon__Frontend" class="btn-sm secondary" target="_blank" >GitHub</a>
+                <a
+                  href="https://seidsualehamazonclone.netlify.app/"
+                  class="btn-sm"
+                  target="_blank"
+                  >Live Demo</a
+                >
+                <a
+                  href="https://github.com/Seid-Sualeh/Amazon__Frontend"
+                  class="btn-sm secondary"
+                  target="_blank"
+                  >GitHub</a
+                >
               </div>
             </div>
           </div>
@@ -349,7 +396,9 @@
             <div class="project-info">
               <h3>AFIYA Hospital</h3>
               <p>
-                A hospital website built with HTML, CSS, and JavaScript, featuring responsive design and interactive UI for healthcare services.
+                A hospital website built with HTML, CSS, and JavaScript,
+                featuring responsive design and interactive UI for healthcare
+                services.
               </p>
               <div class="project-tags">
                 <span>HTML</span>
@@ -420,8 +469,8 @@
             </div>
             <h3>Web Development</h3>
             <p>
-              Custom websites built from scratch using clean, semantic code
-              that's optimized for performance and search engines.
+              Building modern, responsive websites using the latest web
+              technologies like HTML5, CSS3, JavaScript, React, and Node.js.
             </p>
           </div>
 
@@ -431,8 +480,8 @@
             </div>
             <h3>Responsive Design</h3>
             <p>
-              Websites that look and function flawlessly across all devices,
-              from smartphones to large desktop monitors.
+              Creating mobile-friendly designs that ensure optimal user
+              experiences across all devices and screen sizes.
             </p>
           </div>
 
@@ -442,8 +491,8 @@
             </div>
             <h3>UI/UX Design</h3>
             <p>
-              User-centered design that focuses on creating intuitive,
-              accessible, and engaging user experiences.
+              Designing intuitive user interfaces and engaging user experiences
+              that align with your brand identity and business goals.
             </p>
           </div>
 
@@ -453,8 +502,8 @@
             </div>
             <h3>SEO Optimization</h3>
             <p>
-              Optimization strategies to improve visibility in search engines
-              and drive organic traffic to your website.
+              Implementing SEO best practices to improve your website's search
+              engine rankings and increase organic traffic.
             </p>
           </div>
         </div>
@@ -544,7 +593,12 @@
         <div class="footer-content">
           <div class="footer-logo">
             <a href="#"><span class="highlight">Seid</span>Sualeh</a>
-            <p>Creating beautiful web experiences</p>
+            <p>
+              Web Developer
+              <br />
+              Creating beautiful web experiences that are user-friendly.
+             
+            </p>
           </div>
           <div class="footer-links">
             <h3>Quick Links</h3>
@@ -558,8 +612,8 @@
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2025 Seid Sualeh All Rights Reserved.</p>
-          <!-- <p>Build by <a href="https://t.me/et">Seid Sualeh</a></p> -->
+          <p>&copy; 2024 Seid Sualeh. All rights reserved.</p>
+          <p>Designed by Seid Sualeh</p>
           <a href="#hero" class="back-to-top" aria-label="Back to top">
             <i class="fas fa-arrow-up"></i>
           </a>
@@ -571,6 +625,5 @@
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
 
     <script src="Js/script.js"></script>
-    
   </body>
 </html>
