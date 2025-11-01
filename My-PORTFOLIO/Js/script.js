@@ -19,6 +19,126 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".testimonial-card");
+  const dots = document.querySelectorAll(".testimonial-dot");
+  let current = 0;
+  let autoSlide;
+
+  function showSlide(index) {
+    cards.forEach((card) => card.classList.remove("active"));
+    dots.forEach((dot) => dot.classList.remove("active"));
+    current = (index + cards.length) % cards.length;
+    cards[current].classList.add("active");
+    dots[current].classList.add("active");
+  }
+
+  function nextSlide() {
+    showSlide(current + 1);
+  }
+
+  function startAutoSlide() {
+    autoSlide = setInterval(nextSlide, 5000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(autoSlide);
+  }
+
+  // Dots click navigation
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      stopAutoSlide();
+      showSlide(index);
+      startAutoSlide();
+    });
+  });
+
+  // Auto play
+  startAutoSlide();
+
+  // Pause on hover
+  const container = document.querySelector(".testimonial-container");
+  container.addEventListener("mouseenter", stopAutoSlide);
+  container.addEventListener("mouseleave", startAutoSlide);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const typedEl = document.querySelector('.typed');
+    if (!typedEl) return;
+
+    const items = (typedEl.dataset.typedItems || '').split(',').map(s => s.trim()).filter(Boolean);
+    if (!items.length) return;
+
+    let itemIndex = 0;
+    let charIndex = 0;
+    let typing = true;
+    const TYPING_SPEED = 60;
+    const PAUSE_AFTER = 1500;
+    const DELETE_SPEED = 30;
+
+    function type() {
+      const current = items[itemIndex];
+      if (typing) {
+        charIndex++;
+        typedEl.textContent = current.slice(0, charIndex);
+        if (charIndex === current.length) {
+          typing = false;
+          setTimeout(type, PAUSE_AFTER);
+        } else {
+          setTimeout(type, TYPING_SPEED);
+        }
+      } else {
+        charIndex--;
+        typedEl.textContent = current.slice(0, charIndex);
+        if (charIndex === 0) {
+          typing = true;
+          itemIndex = (itemIndex + 1) % items.length;
+          setTimeout(type, 300);
+        } else {
+          setTimeout(type, DELETE_SPEED);
+        }
+      }
+    }
+
+    // Start typing
+    type();
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function setupMobileNav() {
   const menuButton = document.getElementById("mobile-menu-button");
   const mobileMenu = document.getElementById("mobile-menu");
@@ -940,46 +1060,3 @@ window.addEventListener("load", function () {
 
 
 
-document.addEventListener("DOMContentLoaded", function () {
-  const cards = document.querySelectorAll(".testimonial-card");
-  const dots = document.querySelectorAll(".testimonial-dot");
-  let current = 0;
-  let autoSlide;
-
-  function showSlide(index) {
-    cards.forEach((card) => card.classList.remove("active"));
-    dots.forEach((dot) => dot.classList.remove("active"));
-    current = (index + cards.length) % cards.length;
-    cards[current].classList.add("active");
-    dots[current].classList.add("active");
-  }
-
-  function nextSlide() {
-    showSlide(current + 1);
-  }
-
-  function startAutoSlide() {
-    autoSlide = setInterval(nextSlide, 5000);
-  }
-
-  function stopAutoSlide() {
-    clearInterval(autoSlide);
-  }
-
-  // Dots click navigation
-  dots.forEach((dot, index) => {
-    dot.addEventListener("click", () => {
-      stopAutoSlide();
-      showSlide(index);
-      startAutoSlide();
-    });
-  });
-
-  // Auto play
-  startAutoSlide();
-
-  // Pause on hover
-  const container = document.querySelector(".testimonial-container");
-  container.addEventListener("mouseenter", stopAutoSlide);
-  container.addEventListener("mouseleave", startAutoSlide);
-});

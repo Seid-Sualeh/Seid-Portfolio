@@ -1,11 +1,14 @@
 
-/* ...existing code... */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Place after .cta-buttons .btn-primary:hover */
-.cta-buttons .btn-primary.download-resume:hover {
+/* .cta-buttons .btn-primary.download-resume:hover {
   background-color: var(--accent-purple) !important;
   color: var(--white) !important;
-}
+} */
 /* Base Styles */
 :root {
   /* Colors */
@@ -58,11 +61,6 @@
 }
 
 /* Reset & Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: "Inter", sans-serif;
@@ -144,22 +142,7 @@ h3 {
   color: var(--primary-blue);
 }
 
-/* 3D Text Effect */
-.text-3d {
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
-    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
-    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
-    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
-    0 20px 20px rgba(0, 0, 0, 0.15);
-}
 
-.dark-mode .text-3d {
-  text-shadow: 0 1px 0 #666, 0 2px 0 #585858, 0 3px 0 #444, 0 4px 0 #333,
-    0 5px 0 #222, 0 6px 1px rgba(0, 0, 0, 0.3), 0 0 5px rgba(0, 0, 0, 0.3),
-    0 1px 3px rgba(0, 0, 0, 0.5), 0 3px 5px rgba(0, 0, 0, 0.4),
-    0 5px 10px rgba(0, 0, 0, 0.45), 0 10px 10px rgba(0, 0, 0, 0.4),
-    0 20px 20px rgba(0, 0, 0, 0.35);
-}
 
 /* Buttons */
 .btn-primary {
@@ -290,13 +273,14 @@ h3 {
   z-index: 1000;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   transition: all var(--transition-normal);
+
 }
 
 #header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem var(--spacing-md);
+  padding: rem var(--spacing-md);
 }
 
 .logo a {
