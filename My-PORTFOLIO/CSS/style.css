@@ -159,6 +159,7 @@ h3 {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  /* margin-top: 10px; */
 }
 
 .btn-primary::before {
@@ -794,45 +795,92 @@ color: var(--white);
   gap: var(--spacing-xl);
   align-items: center;
 }
-
 .about-image {
   position: relative;
   overflow: hidden;
-  border-radius: var(--border-radius-lg);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  transform: perspective(1000px) rotateY(0deg);
-  transition: transform 0.8s;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.15), rgba(255, 255, 255, 0.05));
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  perspective: 1000px;
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
   transform-style: preserve-3d;
 }
 
-.about-image:hover {
-  transform: perspective(1000px) rotateY(5deg);
-}
 
+/* Inner image styling */
 .about-image img {
-  transition: transform 0.5s;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  transition: transform 0.8s ease, filter 0.5s ease;
+  filter: brightness(1.05) contrast(1.05);
+  transform: translateZ(30px); /* Push image forward for 3D effect */
 }
 
+/* Scale and brighten slightly on hover */
 .about-image:hover img {
-  transform: scale(1.05);
+  transform: translateZ(50px) scale(1.08);
+  filter: brightness(1.2) contrast(1.1);
 }
 
-.about-image::before {
+/* 💡 Light reflection animation */
+/* .about-image::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, var(--primary-blue) 0%, transparent 100%);
-  opacity: 0.3;
-  z-index: 1;
-  transition: opacity var(--transition-normal);
-}
+  top: -75%;
+  left: -50%;
+  width: 200%;
+  height: 250%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.35) 0%, transparent 60%);
+  transform: rotate(25deg);
+  opacity: 0;
+  transition: all 0.8s ease;
+} */
 
 .about-image:hover::before {
-  opacity: 0.5;
+  opacity: 0.4;
+  transform: translateX(150%) rotate(25deg);
 }
+
+/* 🌈 Attractive glowing animated frame */
+.about-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  padding: 10px;
+  background: linear-gradient(
+    135deg,
+    #007bff,
+    #00e1ff,
+    #9b5de5,
+    #f15bb5,
+    #fee440
+  );
+  background-size: 400% 400%;
+  animation: frameGlow 8s ease infinite;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 1;
+}
+
+/* 🌈 Moving glowing gradient border animation */
+@keyframes frameGlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+
+
 
 .about-text p {
   color: black;
@@ -1062,9 +1110,54 @@ color: var(--white);
 
 
 
+#typed {
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  display: inline-block;
+  white-space: nowrap;
+  border-right: 3px solid #fff;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 
 
 
+.slide-in-bottom {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add animation glow or gradient to your name */
+.name-animate {
+  background: linear-gradient(90deg, #ff4d4d, #4dd2ff, #ffd24d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  animation: colorMove 3s linear infinite;
+}
+
+@keyframes colorMove {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
 
 
 

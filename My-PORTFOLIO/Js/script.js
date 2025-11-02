@@ -79,6 +79,63 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+const typedText = document.getElementById("typed");
+const texts = [
+  "Front-End Web Developer.",
+  "Full-Stack Web Developer.",
+  "MERN Stack Developer.",
+  "React Js Developer.",
+  "AI Integration & Automation."
+];
+
+const colors = ["#ff4d4d", "#4dff4d", "#4dd2ff", "#ffd24d", "#b84dff"];
+
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeEffect() {
+  const currentText = texts[textIndex];
+  typedText.innerHTML = "";
+
+  for (let i = 0; i < charIndex; i++) {
+    const span = document.createElement("span");
+    span.textContent = currentText[i];
+    span.style.color = colors[i % colors.length];
+    typedText.appendChild(span);
+  }
+
+  if (!isDeleting && charIndex < currentText.length) {
+    charIndex++;
+    setTimeout(typeEffect, 120);
+  } else if (isDeleting && charIndex > 0) {
+    charIndex--;
+    setTimeout(typeEffect, 50);
+  } else {
+    if (!isDeleting) {
+      isDeleting = true;
+      setTimeout(typeEffect, 1000);
+    } else {
+      isDeleting = false;
+      textIndex = (textIndex + 1) % texts.length;
+      setTimeout(typeEffect, 300);
+    }
+  }
+}
+
+typeEffect();
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
