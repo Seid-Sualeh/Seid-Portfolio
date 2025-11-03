@@ -84,7 +84,7 @@ const texts = [
   "Front-End Web Developer.",
   "Full-Stack Web Developer.",
   "MERN Stack Developer.",
-  "React Js Developer.",
+  "React.js Developer.",
  "AI Integration Specialist.",
   "Problem Solver .",
   "Quick Learner . ",
