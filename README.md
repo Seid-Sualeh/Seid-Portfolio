@@ -17,7 +17,7 @@ The website is fully responsive, modern, and optimized for both desktop and mobi
 ## ✨ Features
 
 ✅ Responsive design with modern UI  
-✅ Built using **HTML, CSS, JavaScript, Bootstrap, TailwindCSS, React**  
+✅ Built using **HTML, CSS, JavaScript, Bootstrap,**  
 ✅ Showcases my **skills, projects, certifications, and contact details**  
 ✅ **Interactive contact form** using EmailJS to send messages directly to my email  
 ✅ **Visitor tracking** using Google Analytics to monitor site activity  
@@ -53,7 +53,7 @@ root
 
 💼 **LinkedIn:** [Seid Sualeh](https://www.linkedin.com/in/seid-sualeh)  
 💻 **GitHub:** [Seid-Sualeh](https://github.com/Seid-Sualeh)  
-🌐 **Portfolio:** [seid sualeh](https://seidsualeh.vercel.app)  
+🌐 **Portfolio:** [Seid Sualeh](https://seidsualeh.vercel.app)  
 📧 **Email:** plshireseid@gmail.com  
 
 **Contact Form Feature:**  
