@@ -1112,12 +1112,14 @@ color: var(--white);
 
 #typed {
   font-size: 50px;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 1px;
   display: inline-block;
   white-space: nowrap;
   border-right: 3px solid #fff;
   animation: blink 0.7s infinite;
+  text-align:center ;
+  width: 100%;
 }
 
 @keyframes blink {
@@ -1128,22 +1130,10 @@ color: var(--white);
 
 
 
-.slide-in-bottom {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: slideIn 1s ease forwards;
-}
-
-@keyframes slideIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* Add animation glow or gradient to your name */
 .name-animate {
-  background: linear-gradient(90deg, #ff4d4d, #4dd2ff, #ffd24d);
+  background: linear-gradient(90deg, #00ff00, #ffff00, #ff0000);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
@@ -1159,9 +1149,19 @@ color: var(--white);
   }
 }
 
+@media (max-width:768px) {
+  #typed{
+    font-size: 36px;
+  }
+ 
+}
 
-
-
+ @media (max-width:480px) {
+  #typed{
+    font-size: 22px;
+    letter-spacing: 0.5px;
+  }
+}
 /* Projects Section */
 .projects-grid {
   display: grid;

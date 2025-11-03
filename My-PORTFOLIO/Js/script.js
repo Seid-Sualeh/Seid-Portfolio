@@ -85,7 +85,7 @@ const texts = [
   "Full-Stack Web Developer.",
   "MERN Stack Developer.",
   "React Js Developer.",
-  "AI Integration & Automation."
+  "AI Integration & Automation Enthusiast.",
 ];
 
 const colors = ["#ff4d4d", "#4dff4d", "#4dd2ff", "#ffd24d", "#b84dff"];
@@ -152,7 +152,7 @@ typeEffect();
     let typing = true;
     const TYPING_SPEED = 60;
     const PAUSE_AFTER = 1500;
-    const DELETE_SPEED = 30;
+    const DELETE_SPEED = 50;
 
     function type() {
       const current = items[itemIndex];
@@ -421,7 +421,8 @@ function setupFormValidation() {
           successMessage.style.opacity = "0";
           successMessage.style.transition = "all 0.5s ease";
           successMessage.innerHTML =
-            '<i class="fas fa-check-circle mr-2"></i> Your message has been sent successfully!';
+'<i class="fas fa-check-circle mr-2"></i> Thank you! Your message has been sent successfully. I’ll review it and get back to you shortly.';
+
 
           form.insertBefore(successMessage, form.firstChild);
 
