@@ -85,7 +85,7 @@ const texts = [
   "Full-Stack Web Developer.",
   "MERN Stack Developer.",
   "React Js Developer.",
-  "AI Integration & Automation Enthusiast.",
+  "AI Integration.",
 ];
 
 const colors = ["#ff4d4d", "#4dff4d", "#4dd2ff", "#ffd24d", "#b84dff"];
