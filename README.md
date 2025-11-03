@@ -10,7 +10,7 @@ The website is fully responsive, modern, and optimized for both desktop and mobi
 
 ## 🚀 Live Demo
 
-🔗 **[Visit Portfolio](https://seidsualeh.netlify.app/)**
+🔗 **[Visit Portfolio](https://seidsualeh.vercel.app/)**
 
 ---
 
@@ -28,10 +28,10 @@ The website is fully responsive, modern, and optimized for both desktop and mobi
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** HTML5, CSS3, Bootstrap, TailwindCSS, React, JavaScript  
-- **Backend:** Node.js, MySQL, PHP, Express.js  
+- **Frontend:** HTML5, CSS3, Bootstrap,JavaScript  
+
 - **Version Control:** Git & GitHub  
-- **Deployment:** Netlify & GitHub Pages  
+- **Deployment:** Vercel & GitHub Pages  
 - **Other Tools:** EmailJS (for contact form), Google Analytics (for visitor tracking)
 
 ---
@@ -53,7 +53,7 @@ root
 
 💼 **LinkedIn:** [Seid Sualeh](https://www.linkedin.com/in/seid-sualeh)  
 💻 **GitHub:** [Seid-Sualeh](https://github.com/Seid-Sualeh)  
-🌐 **Portfolio:** [seidsualeh.netlify.app](https://seidsualeh.netlify.app)  
+🌐 **Portfolio:** [seid sualeh](https://seidsualeh.vercel.app)  
 📧 **Email:** plshireseid@gmail.com  
 
 **Contact Form Feature:**  
