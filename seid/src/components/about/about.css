@@ -1,0 +1,638 @@
+/* About Section */
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  align-items: center;
+}
+.about-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 123, 255, 0.15),
+    rgba(255, 255, 255, 0.05)
+  );
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  perspective: 1000px;
+  transition: transform 0.8s ease, box-shadow 0.8s ease;
+  transform-style: preserve-3d;
+}
+
+/* Inner image styling */
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+  transition: transform 0.8s ease, filter 0.5s ease;
+  filter: brightness(1.05) contrast(1.05);
+  transform: translateZ(30px); /* Push image forward for 3D effect */
+}
+
+/* Scale and brighten slightly on hover */
+.about-image:hover img {
+  transform: translateZ(50px) scale(1.08);
+  filter: brightness(1.2) contrast(1.1);
+}
+
+.about-image:hover::before {
+  opacity: 0.4;
+  transform: translateX(150%) rotate(25deg);
+}
+
+/* 🌈 Attractive glowing animated frame */
+.about-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  padding: 10px;
+  background: linear-gradient(
+    135deg,
+    #007bff,
+    #00e1ff,
+    #9b5de5,
+    #f15bb5,
+    #fee440
+  );
+  background-size: 400% 400%;
+  animation: frameGlow 8s ease infinite;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 1;
+}
+
+/* 🌈 Moving glowing gradient border animation */
+@keyframes frameGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.about-text p {
+  color: black;
+}
+.dark-mode .about-text p {
+  color: white;
+}
+
+/* Skills */
+.skills {
+  margin-top: var(--spacing-xl);
+  padding: var(--spacing-lg) 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 123, 255, 0.05),
+    rgba(155, 93, 229, 0.05)
+  );
+  border-radius: 20px;
+  padding-left: var(--spacing-lg);
+  padding-right: var(--spacing-lg);
+}
+
+.skills .section-title {
+  margin-bottom: var(--spacing-lg);
+  color: var(--text-primary);
+}
+
+/* Horizontal layout for skill sections */
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-xl);
+  align-items: start;
+}
+
+.skill-tags {
+  margin-bottom: 0 !important;
+}
+
+.skill-tags {
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-sm);
+}
+
+/* Horizontal skills container */
+.skills-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.skill-tags:last-of-type {
+  margin-bottom: 0;
+}
+
+.skill-badge {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all var(--transition-normal);
+  transform-style: preserve-3d;
+  position: relative;
+  margin-right: var(--spacing-sm);
+  margin-bottom: var(--spacing-sm);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+
+/* Icon styling within skill badges */
+.skill-badge i {
+  margin-bottom: 0.25rem;
+  font-size: 1.5rem;
+  display: block;
+}
+
+/* Custom icon styling for TypeScript and Next.js */
+.custom-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.25rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.ts-text {
+  color: #3178c6;
+  background: linear-gradient(135deg, #3178c6, #235a97);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(49, 120, 198, 0.3);
+}
+
+.nextjs-text {
+  color: #000;
+  background: linear-gradient(135deg, #000000, #333333);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill-badge span {
+  font-size: 0.7rem;
+  line-height: 1;
+}
+
+/* Custom color classes for icons */
+.text-purple {
+  color: #6f42c1 !important;
+}
+.text-teal {
+  color: #20c997 !important;
+}
+.text-red {
+  color: #dc3545 !important;
+}
+.text-success {
+  color: #28a745 !important;
+}
+.text-warning {
+  color: #ffc107 !important;
+}
+.text-primary {
+  color: #007bff !important;
+}
+.text-info {
+  color: #17a2b8 !important;
+}
+.text-danger {
+  color: #dc3545 !important;
+}
+.text-dark {
+  color: #343a40 !important;
+}
+.text-secondary {
+  color: #6c757d !important;
+}
+
+.skill-badge::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(45deg, var(--accent-purple), var(--accent-blue));
+  z-index: -1;
+  border-radius: 50%;
+  transform: translateZ(-1px);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.skill-badge:hover {
+  transform: translateY(-3px) translateZ(0);
+  color: var(--white) !important;
+}
+
+.skill-badge:hover::before {
+  opacity: 1;
+}
+
+/* Simple fade in animation for skill appearance */
+.skill-badge {
+  opacity: 0;
+  animation: fadeIn 0.6s ease forwards;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Add some additional spacing and better typography for section titles */
+.skill-tags h3 {
+  margin-bottom: var(--spacing-lg);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  position: relative;
+  padding-bottom: var(--spacing-sm);
+}
+
+.skill-tags h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent-purple), var(--accent-blue));
+  border-radius: 2px;
+  margin-top: var(--spacing-sm);
+}
+
+/* Ensure proper spacing between skill sections */
+.skill-tags {
+  margin-bottom: calc(var(--spacing-xl) + var(--spacing-lg));
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skills {
+    padding-left: var(--spacing-md);
+    padding-right: var(--spacing-md);
+  }
+
+  /* Keep skill sections side by side on tablet */
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+  }
+
+  .skill-badge {
+    width: 75px;
+    height: 75px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex-shrink: 0;
+  }
+
+  .skill-badge i {
+    font-size: 1.3rem;
+  }
+
+  .skill-badge span {
+    font-size: 0.65rem;
+  }
+
+  .custom-icon {
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+
+  .skill-tags {
+    gap: var(--spacing-xs);
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Ensure skills stay horizontal on mobile */
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .skill-badge {
+    width: 70px;
+    height: 70px;
+    margin-right: 0.4rem;
+    margin-bottom: 0.4rem;
+    flex-shrink: 0;
+  }
+
+  .custom-icon {
+    width: 24px;
+    height: 24px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .skill-badge {
+    width: 65px;
+    height: 65px;
+  }
+
+  .skill-badge span {
+    font-size: 0.6rem;
+  }
+}
+
+/* Ensure proper icon spacing and color inheritance */
+.skill-badge i {
+  color: inherit !important;
+}
+
+/* Section Title Styles */
+.section-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+  width: 100%;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-blue), var(--accent-purple));
+  border-radius: 999px;
+  animation: gradient-shift 3s infinite alternate;
+}
+
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* 🌈 Colorful Gradient Icon Styles */
+.text-gradient-orange {
+  background: linear-gradient(135deg, #ff6b35, #f7931e, #ffaa00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(255, 107, 53, 0.4));
+  animation: glow-orange 3s ease-in-out infinite alternate;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #007bff, #00d4ff, #0099cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(0, 123, 255, 0.4));
+  animation: glow-blue 3s ease-in-out infinite alternate;
+}
+
+.text-gradient-yellow {
+  background: linear-gradient(135deg, #ffd700, #ffed4e, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.4));
+  animation: glow-yellow 3s ease-in-out infinite alternate;
+}
+
+.text-gradient-purple {
+  background: linear-gradient(135deg, #6f42c1, #9b5de5, #c77dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(111, 66, 193, 0.4));
+  animation: glow-purple 3s ease-in-out infinite alternate;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #20c997, #17a2b8, #00bcd4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(32, 201, 151, 0.4));
+  animation: glow-cyan 3s ease-in-out infinite alternate;
+}
+
+.text-gradient-pink {
+  background: linear-gradient(135deg, #e91e63, #f06292, #ec407a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(233, 30, 99, 0.4));
+  animation: glow-pink 3s ease-in-out infinite alternate;
+}
+
+.text-gradient-red {
+  background: linear-gradient(135deg, #dc3545, #e74c3c, #ff4757);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(220, 53, 69, 0.4));
+  animation: glow-red 3s ease-in-out infinite alternate;
+}
+
+.text-gradient-green {
+  background: linear-gradient(135deg, #28a745, #20c997, #00d2d3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(40, 167, 69, 0.4));
+  animation: glow-green 3s ease-in-out infinite alternate;
+}
+
+.text-gradient-slate {
+  background: linear-gradient(135deg, #495057, #6c757d, #343a40);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(73, 80, 87, 0.4));
+  animation: glow-slate 3s ease-in-out infinite alternate;
+}
+
+.text-gradient-dark {
+  background: linear-gradient(135deg, #2c3e50, #34495e, #2c3e50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 8px rgba(44, 62, 80, 0.4));
+  animation: glow-dark 3s ease-in-out infinite alternate;
+}
+
+/* 🌟 Glowing animations for different colors */
+@keyframes glow-orange {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(255, 107, 53, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0 0 15px rgba(255, 107, 53, 0.7));
+  }
+}
+
+@keyframes glow-blue {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(0, 123, 255, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0 0 15px rgba(0, 123, 255, 0.7));
+  }
+}
+
+@keyframes glow-yellow {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0 0 15px rgba(255, 215, 0, 0.7));
+  }
+}
+
+@keyframes glow-purple {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(111, 66, 193, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0 0 15px rgba(111, 66, 193, 0.7));
+  }
+}
+
+@keyframes glow-cyan {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(32, 201, 151, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0 0 15px rgba(32, 201, 151, 0.7));
+  }
+}
+
+@keyframes glow-pink {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(233, 30, 99, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0 0 15px rgba(233, 30, 99, 0.7));
+  }
+}
+
+@keyframes glow-red {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(220, 53, 69, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0 0 15px rgba(220, 53, 69, 0.7));
+  }
+}
+
+@keyframes glow-green {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(40, 167, 69, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0 0 15px rgba(40, 167, 69, 0.7));
+  }
+}
+
+@keyframes glow-slate {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(73, 80, 87, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0 0 15px rgba(73, 80, 87, 0.7));
+  }
+}
+
+@keyframes glow-dark {
+  0% {
+    filter: drop-shadow(0 0 5px rgba(44, 62, 80, 0.3));
+  }
+  100% {
+    filter: drop-shadow(0 0 15px rgba(44, 62, 80, 0.7));
+  }
+}
+
+/* Enhanced hover effects for skill badges */
+.skill-badge:hover {
+  transform: translateY(-5px) translateZ(0) scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 123, 255, 0.3);
+}
+
+.skill-badge:hover::before {
+  opacity: 1;
+  background: linear-gradient(
+    45deg,
+    #ff6b35,
+    #f7931e,
+    #007bff,
+    #9b5de5,
+    #e91e63
+  );
+  animation: borderRotate 2s linear infinite;
+}
+
+@keyframes borderRotate {
+  0% {
+    transform: translateZ(-1px) rotate(0deg);
+  }
+  100% {
+    transform: translateZ(-1px) rotate(360deg);
+  }
+}
+
+/* Add floating animation to skill badges */
+.skill-badge {
+  animation: fadeIn 0.6s ease forwards, float 6s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.1s), calc(var(--i) * 0.1s + 2s);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
