@@ -8,25 +8,12 @@ import abegarage from "../../../assets/image/abe garage.jpg";
 import portfolio from "../../../assets/image/portfolio.jpeg";
 import alpaca from "../../../assets/image/computer size.png";
 import weather from "../../../assets/image/desktop-size.png";
-import blogApp from "../../../assets/image/screencapture-seid-blog-app-vercel-app-2025-12-01-20_23_55.png";
+import blogApp from "../../../assets/image/blog.png";
+
+
 
 const Projects = () => {
   const projects = [
-    {
-      title: "Blog App",
-      description:
-        "A modern, responsive blog application built with React and Node.js. Features include user authentication, CRUD operations for blog posts, rich text editing, and a clean, intuitive interface for both readers and writers.",
-      image: blogApp,
-      tags: [
-        "React.js",
-        "Node.js",
-        "Express.js",
-        "REST API",
-        "Responsive Design",
-      ],
-      liveDemo: "https://seid-blog-app.vercel.app/",
-      github: "https://github.com/Seid-Sualeh/my-blog-frontend",
-    },
     {
       title: "Netflix-Clone",
       description:
@@ -41,7 +28,7 @@ const Projects = () => {
       description:
         "A full-stack Amazon clone featuring a React frontend, RESTful API integration, Express/Node.js backend, and Firebase authentication and database. Includes modern UI with CSS and real-time data updates.",
       image: amazon,
-      tags: ["HTML", "CSS", "RESTful API", "Express", "Node.js", "Firebase"],
+      tags: ["React", "CSS", "RESTful API", "Express", "Node.js", "Firebase"],
       liveDemo: "https://seidamazoneclone.vercel.app/",
       github: "https://github.com/Seid-Sualeh/Amazon__Frontend",
     },
@@ -98,6 +85,21 @@ const Projects = () => {
       tags: ["React.js", "CSS", "RESTful API"],
       liveDemo: "https://seid-weather-app.vercel.app/",
       github: "https://github.com/Seid-Sualeh/Weather-App",
+    },
+    {
+      title: "Blog App",
+      description:
+        "A modern, responsive blog application built with React and Node.js. Features include user authentication, CRUD operations for blog posts, rich text editing, and a clean, intuitive interface for both readers and writers.",
+      image: blogApp,
+      tags: [
+        "React.js",
+        "Node.js",
+        "Express.js",
+        "REST API",
+        "Responsive Design",
+      ],
+      liveDemo: "https://seid-blog-app.vercel.app/",
+      github: "https://github.com/Seid-Sualeh/my-blog-frontend",
     },
   ];
 
