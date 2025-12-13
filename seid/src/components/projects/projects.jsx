@@ -5,12 +5,11 @@ import amazon from "../../../assets/image/amazon.jpg";
 import apple from "../../../assets/image/apple.png";
 import forum from "../../../assets/image/evangadi forum.png";
 import abegarage from "../../../assets/image/abe garage.jpg";
-import portfolio from "../../../assets/image/portfolio.jpeg";
+// import portfolio from "../../../assets/image/portfolio.jpeg";
 import alpaca from "../../../assets/image/computer size.png";
 import weather from "../../../assets/image/desktop-size.png";
 import blogApp from "../../../assets/image/blog.png";
-
-
+import appointmentApp from "../../../assets/image/Appointment.jpg";
 
 const Projects = () => {
   const projects = [
@@ -59,15 +58,15 @@ const Projects = () => {
       liveDemo: "#",
       github: "#",
     },
-    {
-      title: "Portfolio Website",
-      description:
-        "A responsive portfolio website with smooth animations, dark mode toggle, and contact form functionality.",
-      image: portfolio,
-      tags: ["HTML", "CSS", "JavaScript"],
-      liveDemo: "#",
-      github: "#",
-    },
+    // {
+    //   title: "Portfolio Website",
+    //   description:
+    //     "A responsive portfolio website with smooth animations, dark mode toggle, and contact form functionality.",
+    //   image: portfolio,
+    //   tags: ["HTML", "CSS", "JavaScript"],
+    //   liveDemo: "#",
+    //   github: "#",
+    // },
     {
       title: "Alpaca Image Generator",
       description:
@@ -100,6 +99,15 @@ const Projects = () => {
       ],
       liveDemo: "https://seid-blog-app.vercel.app/",
       github: "https://github.com/Seid-Sualeh/my-blog-frontend",
+    },
+    {
+      title: "My Appointment App",
+      description:
+        "A comprehensive appointment scheduling application that allows users to book, manage, and track appointments. Features include user authentication, calendar integration, and real-time availability updates.",
+      image: appointmentApp,
+      tags: ["React", "Node.js", "Express", "MongoDB", "REST API"],
+      liveDemo: "https://my-appointment-app-eta.vercel.app/",
+      github: "https://github.com/Seid-Sualeh/My-Appointment",
     },
   ];
 
