@@ -14,6 +14,15 @@ import appointmentApp from "../../../assets/image/Appointment.jpg";
 const Projects = () => {
   const projects = [
     {
+      title: "Abe Garage",
+      description:
+        "A full-featured web application for managing car repairs and services. Users can track vehicles, schedule services, and view maintenance history. Built with modern technologies for responsive UI and smooth user experience.",
+      image: abegarage,
+      tags: ["React.js", "Node.js", "Express.js", "MySQL", "REST API"],
+      liveDemo: "https://seid-abe-garage.netlify.app",
+      github: "https://github.com/Seid-Sualeh/Abe-Garage-Project",
+    },
+    {
       title: "Netflix-Clone",
       description:
         "A responsive Netflix clone built with React, featuring dynamic content fetching from TMDB API and allowing users to watch trailers of popular movies and TV shows.",
@@ -48,15 +57,6 @@ const Projects = () => {
       tags: ["React.js", "Node.js", "Express.js", "MySQL", "AI Integration"],
       liveDemo: "https://seidforum.vercel.app",
       github: "https://github.com/Seid-Sualeh/Evangadi_Forum_Front-end",
-    },
-    {
-      title: "Abe Garage",
-      description:
-        "A full-featured web application for managing car repairs and services. Users can track vehicles, schedule services, and view maintenance history. Built with modern technologies for responsive UI and smooth user experience.",
-      image: abegarage,
-      tags: ["React.js", "Node.js", "Express.js", "MySQL", "REST API"],
-      liveDemo: "#",
-      github: "#",
     },
     // {
     //   title: "Portfolio Website",
