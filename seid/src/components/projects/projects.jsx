@@ -32,7 +32,7 @@ const Projects = () => {
       github: "https://github.com/Seid-Sualeh/My-Ntflix-Project",
     },
     {
-      title: "Amazon Frontend and Backend",
+      title: "Amazon Clone - E-Commerce",
       description:
         "A full-stack Amazon clone featuring a React frontend, RESTful API integration, Express/Node.js backend, and Firebase authentication and database. Includes modern UI with CSS and real-time data updates.",
       image: amazon,
