@@ -10,9 +10,19 @@ import alpaca from "../../../assets/image/computer size.png";
 import weather from "../../../assets/image/desktop-size.png";
 import blogApp from "../../../assets/image/blog.png";
 import appointmentApp from "../../../assets/image/Appointment.jpg";
+import kitchineware from "../../../assets/image/kitchineware.jpg";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "Kitchenware",
+      description:
+        "A full-stack brothers home goods e-commerce platform with React and Express/MySQL, featuring product browsing, customer auth, checkout flow, admin dashboard, real-time notifications, and multilingual support.",
+      image: kitchineware,
+      tags: ["React", "Node.js", "Express", "MySQL", "eCommerce"],
+      liveDemo: "https://brothers-kitchenware.netlify.app",
+      github: "https://github.com/Seid-Sualeh/Brothers-Kitchenware",
+    },
     {
       title: "Abe Garage",
       description:
