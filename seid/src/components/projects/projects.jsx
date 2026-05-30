@@ -11,11 +11,21 @@ import weather from "../../../assets/image/desktop-size.png";
 import blogApp from "../../../assets/image/blog.png";
 import appointmentApp from "../../../assets/image/Appointment.jpg";
 import kitchineware from "../../../assets/image/kitchineware.jpg";
+import hussuDrug from "../../../assets/image/hussuDrug.png";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Kitchenware",
+      title: "Hussu Drug Store",
+      description:
+        "Full-stack pharmacy inventory management: dashboard, inventory, stock in/out, sales, suppliers, categories, reports, and role-based login (Admin / Guest).",
+      image: hussuDrug,
+      tags: ["React", "Node.js", "Express", "MySQL"],
+      liveDemo: "https://hussu-drug-store.vercel.app/",
+      github: "https://github.com/Seid-Sualeh/Hussu-Drug-Store",
+    },
+    {
+      title: "Brother's Kitchenware",
       description:
         "A full-stack brothers home goods e-commerce platform with React and Express/MySQL, featuring product browsing, customer auth, checkout flow, admin dashboard, real-time notifications, and multilingual support.",
       image: kitchineware,
@@ -33,33 +43,6 @@ const Projects = () => {
       github: "https://github.com/Seid-Sualeh/Abe-Garage-Project",
     },
     {
-      title: "Netflix-Clone",
-      description:
-        "A responsive Netflix clone built with React, featuring dynamic content fetching from TMDB API and allowing users to watch trailers of popular movies and TV shows.",
-      image: netflix,
-      tags: ["React", "CSS", "JavaScript", "Rest API"],
-      liveDemo: "https://seidnetflix.vercel.app/",
-      github: "https://github.com/Seid-Sualeh/My-Ntflix-Project",
-    },
-    {
-      title: "Amazon Clone - E-Commerce",
-      description:
-        "A full-stack Amazon clone featuring a React frontend, RESTful API integration, Express/Node.js backend, and Firebase authentication and database. Includes modern UI with CSS and real-time data updates.",
-      image: amazon,
-      tags: ["React", "CSS", "RESTful API", "Express", "Node.js", "Firebase"],
-      liveDemo: "https://seidamazoneclone.vercel.app/",
-      github: "https://github.com/Seid-Sualeh/Amazon__Frontend",
-    },
-    {
-      title: "Apple Website Clone",
-      description:
-        "A modern, full-stack Apple website replica built using React, Node.js, Express, and MySQL. It dynamically fetches the latest nine videos from Apple's official YouTube channel through REST API integration. Designed with responsive UI and smooth animations for a real Apple-like experience.",
-      image: apple,
-      tags: ["React", "Node.js", "Express.js", "REST API", "MySQL"],
-      liveDemo: "https://seidappleclone.vercel.app/",
-      github: "https://github.com/Seid-Sualeh/Apple-Frontend",
-    },
-    {
       title: "Evangadi Forum",
       description:
         "A modern discussion platform built with React.js that allows users to ask, answer, and explore questions across various topics. Features AI-powered suggestions of videos, websites, and books for each question, helping learners explore topics deeply. Includes authentication, responsive UI, and smooth dynamic interactions for an engaging learning experience.",
@@ -67,24 +50,6 @@ const Projects = () => {
       tags: ["React.js", "Node.js", "Express.js", "MySQL", "AI Integration"],
       liveDemo: "https://seidforum.vercel.app",
       github: "https://github.com/Seid-Sualeh/Evangadi_Forum_Front-end",
-    },
-    // {
-    //   title: "Portfolio Website",
-    //   description:
-    //     "A responsive portfolio website with smooth animations, dark mode toggle, and contact form functionality.",
-    //   image: portfolio,
-    //   tags: ["HTML", "CSS", "JavaScript"],
-    //   liveDemo: "#",
-    //   github: "#",
-    // },
-    {
-      title: "Alpaca Image Generator",
-      description:
-        "Alpaca image generation website that creates custom alpaca illustrations. Features include responsive design, smooth animations, and a user-friendly interface.",
-      image: alpaca,
-      tags: ["HTML", "CSS", "JavaScript"],
-      liveDemo: "https://seid-image-generator-website.vercel.app/",
-      github: "https://github.com/Seid-Sualeh/Alpaca-Image-Generator",
     },
     {
       title: "Weather Forecast",
@@ -109,6 +74,42 @@ const Projects = () => {
       ],
       liveDemo: "https://seid-blog-app.vercel.app/",
       github: "https://github.com/Seid-Sualeh/my-blog-frontend",
+    },
+    {
+      title: "Netflix-Clone",
+      description:
+        "A responsive Netflix clone built with React, featuring dynamic content fetching from TMDB API and allowing users to watch trailers of popular movies and TV shows.",
+      image: netflix,
+      tags: ["React", "CSS", "JavaScript", "Rest API"],
+      liveDemo: "https://seidnetflix.vercel.app/",
+      github: "https://github.com/Seid-Sualeh/My-Ntflix-Project",
+    },
+    {
+      title: "Amazon Clone - E-Commerce",
+      description:
+        "A full-stack Amazon clone featuring a React frontend, RESTful API integration, Express/Node.js backend, and Firebase authentication and database. Includes modern UI with CSS and real-time data updates.",
+      image: amazon,
+      tags: ["React", "CSS", "RESTful API", "Express", "Node.js", "Firebase"],
+      liveDemo: "https://seidamazoneclone.vercel.app/",
+      github: "https://github.com/Seid-Sualeh/Amazon__Frontend",
+    },
+    {
+      title: "Apple Website Clone",
+      description:
+        "A modern, full-stack Apple website replica built using React, Node.js, Express, and MySQL. It dynamically fetches the latest nine videos from Apple's official YouTube channel through REST API integration. Designed with responsive UI and smooth animations for an real Apple-like experience.",
+      image: apple,
+      tags: ["React", "Node.js", "Express.js", "REST API", "MySQL"],
+      liveDemo: "https://seidappleclone.vercel.app/",
+      github: "https://github.com/Seid-Sualeh/Apple-Frontend",
+    },
+    {
+      title: "Alpaca Image Generator",
+      description:
+        "Alpaca image generation website that creates custom alpaca illustrations. Features include responsive design, smooth animations, and a user-friendly interface.",
+      image: alpaca,
+      tags: ["HTML", "CSS", "JavaScript"],
+      liveDemo: "https://seid-image-generator-website.vercel.app/",
+      github: "https://github.com/Seid-Sualeh/Alpaca-Image-Generator",
     },
     {
       title: "My Appointment App",
