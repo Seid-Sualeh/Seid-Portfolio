@@ -79,92 +79,150 @@ My journey began with self-learning HTML, CSS, and JavaScript, and I have since 
 
 ## 🚀 Featured Projects
 
-### **1. Blog App**
+### **1. Hussu Drug Store**
 
-_A modern, responsive blog application with full CRUD functionality_
+<p>
+  <a href="https://hussu-drug-store.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <img src="seid/assets/image/hussuDrug.png" alt="Hussu Drug Store" width="260" style="margin:8px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.15)" />
+  </a>
+</p>
 
-- **Technologies**: React.js, Node.js, Express.js, REST API
-- **Features**: User authentication, rich text editing, responsive design
-- **Live Demo**: [View Project](https://seid-blog-app.vercel.app/)
-- **GitHub**: [View Code](https://github.com/Seid-Sualeh/my-blog-frontend)
-
-### **2. Netflix Clone**
-
-_Responsive streaming platform clone with dynamic content_
-
-- **Technologies**: React, CSS, JavaScript, REST API
-- **Features**: TMDB API integration, trailer playback, responsive design
-- **Live Demo**: [View Project](https://seidnetflix.vercel.app/)
-- **GitHub**: [View Code](https://github.com/Seid-Sualeh/My-Ntflix-Project)
-
-### **3. Amazon Full-Stack Clone**
-
-_Complete e-commerce platform with frontend and backend_
-
-- **Technologies**: React, Express.js, Node.js, Firebase, MySQL
-- **Features**: RESTful API, Firebase authentication, real-time updates
-- **Live Demo**: [View Project](https://seidamazoneclone.vercel.app/)
-- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Amazon__Frontend)
-
-### **4. Apple Website Clone**
-
-_Modern Apple website replica with dynamic content_
-
-- **Technologies**: React, Node.js, Express.js, MySQL, REST API
-- **Features**: YouTube API integration, smooth animations, responsive UI
-- **Live Demo**: [View Project](https://seidappleclone.vercel.app/)
-- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Apple-Frontend)
-
-### **5. Evangadi Forum**
-
-_AI-powered discussion platform for educational content_
-
-- **Technologies**: React.js, Node.js, Express.js, MySQL, AI Integration
-- **Features**: User authentication, AI-powered suggestions, responsive design
-- **Live Demo**: [View Project](https://seidforum.vercel.app)
-- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Evangadi_Forum_Front-end)
-
-### **6. Weather Forecast App**
-
-_Real-time weather application with location-based forecasts_
-
-- **Technologies**: React.js, CSS, RESTful API
-- **Features**: Live weather data, location search, responsive design
-- **Live Demo**: [View Project](https://seid-weather-app.vercel.app/)
-- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Weather-App)
-
-### **Additional Projects**
-
-### **7. Hussu Drug Store**
-
-_Full-stack pharmacy inventory management with role-based access_
+_Full-stack pharmacy inventory management: dashboard, inventory, stock in/out, sales, suppliers, categories, reports, and role-based login (Admin / Guest)._ 
 
 - **Technologies**: React, Node.js, Express, MySQL
 - **Features**: Inventory management, dashboard, stock in/out, sales reporting, suppliers, categories, role-based login (Admin / Guest)
 - **Live Demo**: [View Project](https://hussu-drug-store.vercel.app/)
 - **GitHub**: [View Code](https://github.com/Seid-Sualeh/Hussu-Drug-Store)
 
-### **8. Brother's Kitchenware**
+### **2. Brother's Kitchenware**
 
-_E-commerce platform for home goods with multilingual support_
+<p>
+  <a href="https://brothers-kitchenware.netlify.app" target="_blank" rel="noopener noreferrer">
+    <img src="seid/assets/image/kitchineware.jpg" alt="Brother's Kitchenware" width="260" style="margin:8px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.15)" />
+  </a>
+</p>
+
+_A full-stack brothers home goods e-commerce platform with product browsing, auth, checkout, admin dashboard, real-time notifications, and multilingual support._
 
 - **Technologies**: React, Node.js, Express, MySQL
 - **Features**: Product browsing, authentication, checkout, admin dashboard, real-time notifications
 - **Live Demo**: [View Project](https://brothers-kitchenware.netlify.app)
 - **GitHub**: [View Code](https://github.com/Seid-Sualeh/Brothers-Kitchenware)
 
-### **9. Abe Garage**
+### **3. Abe Garage**
 
-_Car repairs and service management application_
+<p>
+  <a href="https://seid-abe-garage.netlify.app" target="_blank" rel="noopener noreferrer">
+    <img src="seid/assets/image/abe garage.jpg" alt="Abe Garage" width="260" style="margin:8px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.15)" />
+  </a>
+</p>
+
+_A full-featured web application for managing car repairs and services, with vehicle tracking, scheduling, and maintenance history._
 
 - **Technologies**: React.js, Node.js, Express.js, MySQL, REST API
 - **Features**: Vehicle tracking, scheduling services, maintenance history, responsive UI
 - **Live Demo**: [View Project](https://seid-abe-garage.netlify.app)
 - **GitHub**: [View Code](https://github.com/Seid-Sualeh/Abe-Garage-Project)
 
+### **4. Evangadi Forum**
+
+<p>
+  <a href="https://seidforum.vercel.app" target="_blank" rel="noopener noreferrer">
+    <img src="seid/assets/image/evangadi forum.png" alt="Evangadi Forum" width="260" style="margin:8px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.15)" />
+  </a>
+</p>
+
+_A modern discussion platform built with AI-powered suggestions to help learners explore topics deeply._
+
+- **Technologies**: React.js, Node.js, Express.js, MySQL, AI Integration
+- **Features**: Authentication, AI-powered suggestions, responsive UI
+- **Live Demo**: [View Project](https://seidforum.vercel.app)
+- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Evangadi_Forum_Front-end)
+
+### **5. Weather Forecast**
+
+<p>
+  <a href="https://seid-weather-app.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <img src="seid/assets/image/desktop-size.png" alt="Weather Forecast" width="260" style="margin:8px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.15)" />
+  </a>
+</p>
+
+_A weather forecast application that provides real-time weather updates and forecasts for any location._
+
+- **Technologies**: React.js, CSS, RESTful API
+- **Features**: Live weather data, location search, responsive design
+- **Live Demo**: [View Project](https://seid-weather-app.vercel.app/)
+- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Weather-App)
+
+### **6. Blog App**
+
+<p>
+  <a href="https://seid-blog-app.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <img src="seid/assets/image/blog.png" alt="Blog App" width="260" style="margin:8px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.15)" />
+  </a>
+</p>
+
+_A modern, responsive blog application with user authentication, CRUD operations, and rich text editing._
+
+- **Technologies**: React.js, Node.js, Express.js, REST API
+- **Features**: User authentication, rich text editing, responsive design
+- **Live Demo**: [View Project](https://seid-blog-app.vercel.app/)
+- **GitHub**: [View Code](https://github.com/Seid-Sualeh/my-blog-frontend)
+
+### **7. Netflix-Clone**
+
+<p>
+  <a href="https://seidnetflix.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <img src="seid/assets/image/netflix.jpg" alt="Netflix Clone" width="260" style="margin:8px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.15)" />
+  </a>
+</p>
+
+_A responsive Netflix clone with dynamic content fetching from TMDB API and trailer playback._
+
+- **Technologies**: React, CSS, JavaScript, REST API
+- **Features**: TMDB API integration, trailer playback, responsive design
+- **Live Demo**: [View Project](https://seidnetflix.vercel.app/)
+- **GitHub**: [View Code](https://github.com/Seid-Sualeh/My-Ntflix-Project)
+
+### **8. Amazon Clone - E-Commerce**
+
+<p>
+  <a href="https://seidamazoneclone.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <img src="seid/assets/image/amazon.jpg" alt="Amazon Clone" width="260" style="margin:8px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.15)" />
+  </a>
+</p>
+
+_A full-stack Amazon clone with frontend, backend, and Firebase integration._
+
+- **Technologies**: React, CSS, RESTful API, Express, Node.js, Firebase
+- **Features**: RESTful API, Firebase auth, real-time updates
+- **Live Demo**: [View Project](https://seidamazoneclone.vercel.app/)
+- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Amazon__Frontend)
+
+### **9. Apple Website Clone**
+
+<p>
+  <a href="https://seidappleclone.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <img src="seid/assets/image/apple.png" alt="Apple Website Clone" width="260" style="margin:8px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.15)" />
+  </a>
+</p>
+
+_A modern Apple website replica with dynamic video content and smooth animations._
+
+- **Technologies**: React, Node.js, Express.js, REST API, MySQL
+- **Features**: YouTube API integration, responsive UI, smooth animations
+- **Live Demo**: [View Project](https://seidappleclone.vercel.app/)
+- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Apple-Frontend)
+
 ### **10. Alpaca Image Generator**
 
-_A creative image generator for custom alpaca illustrations_
+<p>
+  <a href="https://seid-image-generator-website.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <img src="seid/assets/image/computer size.png" alt="Alpaca Image Generator" width="260" style="margin:8px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.15)" />
+  </a>
+</p>
+
+_Alpaca image generation website that creates custom alpaca illustrations._
 
 - **Technologies**: HTML, CSS, JavaScript
 - **Features**: Image generation UI, responsive design
@@ -173,7 +231,13 @@ _A creative image generator for custom alpaca illustrations_
 
 ### **11. My Appointment App**
 
-_Appointment scheduling platform with calendar integration_
+<p>
+  <a href="https://my-appointment-app-eta.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <img src="seid/assets/image/Appointment.jpg" alt="My Appointment App" width="260" style="margin:8px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.15)" />
+  </a>
+</p>
+
+_A comprehensive appointment scheduling application with calendar integration._
 
 - **Technologies**: React, Node.js, Express, MongoDB, REST API
 - **Features**: Booking, calendar view, authentication, real-time availability
