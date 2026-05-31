@@ -133,7 +133,103 @@ _Real-time weather application with location-based forecasts_
 - **Live Demo**: [View Project](https://seid-weather-app.vercel.app/)
 - **GitHub**: [View Code](https://github.com/Seid-Sualeh/Weather-App)
 
+### **Additional Projects**
+
+### **7. Hussu Drug Store**
+
+_Full-stack pharmacy inventory management with role-based access_
+
+- **Technologies**: React, Node.js, Express, MySQL
+- **Features**: Inventory management, dashboard, stock in/out, sales reporting, suppliers, categories, role-based login (Admin / Guest)
+- **Live Demo**: [View Project](https://hussu-drug-store.vercel.app/)
+- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Hussu-Drug-Store)
+
+### **8. Brother's Kitchenware**
+
+_E-commerce platform for home goods with multilingual support_
+
+- **Technologies**: React, Node.js, Express, MySQL
+- **Features**: Product browsing, authentication, checkout, admin dashboard, real-time notifications
+- **Live Demo**: [View Project](https://brothers-kitchenware.netlify.app)
+- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Brothers-Kitchenware)
+
+### **9. Abe Garage**
+
+_Car repairs and service management application_
+
+- **Technologies**: React.js, Node.js, Express.js, MySQL, REST API
+- **Features**: Vehicle tracking, scheduling services, maintenance history, responsive UI
+- **Live Demo**: [View Project](https://seid-abe-garage.netlify.app)
+- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Abe-Garage-Project)
+
+### **10. Alpaca Image Generator**
+
+_A creative image generator for custom alpaca illustrations_
+
+- **Technologies**: HTML, CSS, JavaScript
+- **Features**: Image generation UI, responsive design
+- **Live Demo**: [View Project](https://seid-image-generator-website.vercel.app/)
+- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Alpaca-Image-Generator)
+
+### **11. My Appointment App**
+
+_Appointment scheduling platform with calendar integration_
+
+- **Technologies**: React, Node.js, Express, MongoDB, REST API
+- **Features**: Booking, calendar view, authentication, real-time availability
+- **Live Demo**: [View Project](https://my-appointment-app-eta.vercel.app/)
+- **GitHub**: [View Code](https://github.com/Seid-Sualeh/My-Appointment)
+
 ---
+
+<!-- Project Gallery: clickable thumbnails linking to live demos -->
+<div align="center">
+
+### 📸 Project Gallery
+
+<p>
+   <a href="https://hussu-drug-store.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <img src="seid/assets/image/hussuDrug.png" alt="Hussu Drug Store" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
+   </a>
+   <a href="https://brothers-kitchenware.netlify.app" target="_blank" rel="noopener noreferrer">
+      <img src="seid/assets/image/kitchineware.jpg" alt="Brother's Kitchenware" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
+   </a>
+   <a href="https://seid-abe-garage.netlify.app" target="_blank" rel="noopener noreferrer">
+      <img src="seid/assets/image/abe garage.jpg" alt="Abe Garage" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
+   </a>
+   <a href="https://seidforum.vercel.app" target="_blank" rel="noopener noreferrer">
+      <img src="seid/assets/image/evangadi forum.png" alt="Evangadi Forum" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
+   </a>
+   <a href="https://seid-blog-app.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <img src="seid/assets/image/blog.png" alt="Blog App" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
+   </a>
+</p>
+<p>
+   <a href="https://seidnetflix.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <img src="seid/assets/image/netflix.jpg" alt="Netflix Clone" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
+   </a>
+   <a href="https://seidamazoneclone.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <img src="seid/assets/image/amazon.jpg" alt="Amazon Clone" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
+   </a>
+   <a href="https://seidappleclone.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <img src="seid/assets/image/apple.png" alt="Apple Clone" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
+   </a>
+   <a href="https://seid-image-generator-website.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <img src="seid/assets/image/computer size.png" alt="Alpaca Image Generator" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
+   </a>
+   <a href="https://seid-weather-app.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <img src="seid/assets/image/desktop-size.png" alt="Weather App" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
+   </a>
+</p>
+<p>
+   <a href="https://my-appointment-app-eta.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <img src="seid/assets/image/Appointment.jpg" alt="Appointment App" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
+   </a>
+</p>
+
+<p style="margin-top:8px;font-size:14px;color:#6b7280">Click any thumbnail to open the live demo in a new tab.</p>
+
+</div>
 
 ## 🎓 Education & Certifications
 
@@ -175,7 +271,7 @@ _Real-time weather application with location-based forecasts_
 ## 🏆 Key Achievements
 
 - ✅ **Completed** comprehensive full-stack web development training
-- ✅ **Built** 9+ real-world projects showcasing diverse skills
+- ✅ **Built** 11+ real-world projects showcasing diverse skills
 - ✅ **Integrated** multiple APIs and third-party services
 - ✅ **Developed** responsive designs for all device types
 - ✅ **Created** AI-powered features in forum application
