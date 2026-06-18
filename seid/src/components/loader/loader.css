@@ -1,65 +1,102 @@
-/* Loader full screen */
+/* ============================================================
+   LOADER — Premium Minimalist Loader
+   ============================================================ */
+
 #loader {
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
   width: 100%;
-  height: 100%;
-  background: #111; /* dark background */
+  height: 100vh;
+  background-color: #070b15; /* Always dark bg for the initial reveal load */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
 }
 
-/* The rotating circle (multicolor) */
-.spinner {
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  border: 10px solid transparent;
-  border-top: 10px solid blue;
-  border-right: 10px solid red;
-  border-bottom: 10px solid green;
-  border-left: 10px solid yellow;
-
-  border-radius: 50%;
-  animation: spin 2.5s linear infinite;
-}
-
-/* The logo in center */
-.logoRotate {
-  border-radius: 50%;
-  width: 80px;
-  height: auto;
+.loader-content {
   position: relative;
-  z-index: 100;
-  animation: logoFloat 2s ease-in-out infinite;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Rotate animation */
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+/* ── Glowing concentric rings ── */
+.loader-rings {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Logo floating animation */
-@keyframes logoFloat {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
+.loader-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid transparent;
 }
 
-/* Fade out effect */
-#loader.hidden {
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.5s ease;
+.ring-1 {
+  width: 100px;
+  height: 100px;
+  border-top-color: var(--indigo-500);
+  border-bottom-color: var(--indigo-500);
+  animation: spinClockwise 1.5s cubic-bezier(0.5, 0.1, 0.4, 0.9) infinite;
+}
+
+.ring-2 {
+  width: 80px;
+  height: 80px;
+  border-left-color: var(--violet-500);
+  border-right-color: var(--violet-500);
+  animation: spinCounterClockwise 1.2s cubic-bezier(0.5, 0.1, 0.4, 0.9) infinite;
+}
+
+.ring-3 {
+  width: 60px;
+  height: 60px;
+  border-top-color: var(--emerald-400);
+  border-bottom-color: var(--emerald-400);
+  animation: spinClockwise 0.8s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+/* ── Central Logo Box ── */
+.loader-logo-box {
+  width: 44px;
+  height: 44px;
+  background: linear-gradient(135deg, var(--indigo-500), var(--violet-500));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.45);
+  animation: pulseLogo 1.5s ease-in-out infinite;
+  z-index: 2;
+}
+
+.loader-logo-mark {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #ffffff;
+  line-height: 1;
+}
+
+/* ── Animations ── */
+@keyframes spinClockwise {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes spinCounterClockwise {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+@keyframes pulseLogo {
+  0%, 100% { transform: scale(1); box-shadow: 0 8px 24px rgba(99, 102, 241, 0.4); }
+  50% { transform: scale(1.06); box-shadow: 0 12px 30px rgba(99, 102, 241, 0.6); }
 }

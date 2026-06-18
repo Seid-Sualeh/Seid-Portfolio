@@ -2,32 +2,37 @@
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Live%20Site-2E3440?style=for-the-badge&logo=website&logoColor=white)](https://seid-portfolio-xi.vercel.app/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Seid%20Sualeh-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seid-sualih-92b938370/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Live%20Site-6366F1?style=for-the-badge&logo=website&logoColor=white)](https://seid-portfolio-xi.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Seid%20Sualeh-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seid-sualih-92b938370/)
 [![GitHub](https://img.shields.io/badge/GitHub-Seid--Sualeh-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Seid-Sualeh)
 [![Email](https://img.shields.io/badge/Email-Plshireseid%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Plshireseid@gmail.com)
 
-![Profile Views](https://komarev.com/ghpvc/?username=Seid-Sualeh&style=for-the-badge)
-![Followers](https://img.shields.io/github/followers/Seid-Sualeh?style=for-the-badge)
-![Stars](https://img.shields.io/github/stars/Seid-Sualeh?style=for-the-badge)
+![Profile Views](https://komarev.com/ghpvc/?username=Seid-Sualeh&style=for-the-badge&color=blue)
+![Followers](https://img.shields.io/github/followers/Seid-Sualeh?style=for-the-badge&color=indigo)
+![Stars](https://img.shields.io/github/stars/Seid-Sualeh?style=for-the-badge&color=violet)
 
 </div>
 
 ---
 
+## 👨‍💻 About The Redesign
+
+This repository contains the premium, modern, and professional portfolio website for **Seid Sualeh**. Rebuilt in 2026, it is designed with top-tier SaaS aesthetics, elegant animations, and premium coding practices to command trust with recruiters and clients within 5 seconds.
+
+### ✨ Premium Features Added:
+- **🎨 Global Design System**: Built with modern CSS variables, fluid responsive typography (Space Grotesk & Inter), dark/light mode tokens, and premium glassmorphic layouts.
+- **✨ Code Particle Canvas Engine**: Renders a lightweight, interactive canvas drawing floating monospace code tokens (`< />`, `=>`, `{}`) reacting behind the header and hero sections.
+- **📈 Recruiter-Focused Credibility**: Integrated an availability badge and a credibility stats bar displaying `11+ Projects Shipped` and `Open to Work` immediately on the Hero block.
+- **⏱️ Alternating Timelines**: Transformed the Education and Experience sections into highly polished vertical timelines featuring status labels, color-coded markers, and scroll-triggered animations.
+- **🗂️ Project Tag Filtering**: Supports instant filtering (All, Full-Stack, Frontend) of Seid's 11+ production-grade projects.
+
+---
+
 ## 👨‍💻 About Me
 
-I'm a passionate **Full-Stack Web Developer** with a unique background bridging healthcare technology and modern web development. Based in Addis Ababa, Ethiopia, I specialize in creating beautiful, functional, and responsive websites that deliver exceptional user experiences.
+I'm a passionate **Full-Stack Web Developer** with a unique background bridging healthcare analytics and modern software engineering. Based in Addis Ababa, Ethiopia, I specialize in building fast, beautiful, and scalable web applications using the MERN stack and modern databases.
 
-My journey began with self-learning HTML, CSS, and JavaScript, and I have since advanced into modern frameworks like React, Node.js, and MySQL through comprehensive training programs. I'm committed to using technology to create digital solutions that benefit my community and open opportunities for others.
-
-### 🎯 Professional Highlights
-
-- **Healthcare Technology Background**: Former Medical Laboratory Technologist at Bati Primary Hospital
-- **Full-Stack Development**: Proficient in MERN stack (MongoDB, Express, React, Node.js)
-- **Modern Frameworks**: Experience with React, Next.js, TypeScript, and modern CSS frameworks
-- **API Integration**: RESTful API development and third-party service integration
-- **Responsive Design**: Mobile-first approach with cross-browser compatibility
+My background in Medical Laboratory Science brings a rigorous attention to detail, diagnostic data analysis, and process optimization that directly translates into building robust backend architectures and clean, reliable codebases.
 
 ---
 
@@ -57,7 +62,7 @@ My journey began with self-learning HTML, CSS, and JavaScript, and I have since 
 ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white)
-![REST API](https://img.shields.io/badge/REST-Study-FF6B6B?style=for-the-badge&logo=rest&logoColor=white)
+![REST API](https://img.shields.io/badge/REST--API-10B981?style=for-the-badge&logo=postman&logoColor=white)
 
 </div>
 
@@ -79,108 +84,99 @@ My journey began with self-learning HTML, CSS, and JavaScript, and I have since 
 
 ## 🚀 Featured Projects
 
-### **1. Blog App**
+### **1. Hussu Drug Store**
+*Full-stack pharmacy inventory and management system*
+- **Technologies**: React, Node.js, Express, MySQL
+- **Features**: Live sales dashboard, stock levels tracking, supplier directory, and role-based access control.
+- **Live Demo**: [View Project](https://hussu-drug-store.vercel.app/)
+- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Hussu-Drug-Store)
 
-_A modern, responsive blog application with full CRUD functionality_
+### **2. Brother's Kitchenware**
+*Premium responsive E-Commerce platform*
+- **Technologies**: React, Node.js, Express, MySQL
+- **Features**: Product catalog filtering, user authentication, customer checkout cart, and multi-language support.
+- **Live Demo**: [View Project](https://brothers-kitchenware.netlify.app)
+- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Brothers-Kitchenware)
 
-- **Technologies**: React.js, Node.js, Express.js, REST API
-- **Features**: User authentication, rich text editing, responsive design
-- **Live Demo**: [View Project](https://seid-blog-app.vercel.app/)
-- **GitHub**: [View Code](https://github.com/Seid-Sualeh/my-blog-frontend)
-
-### **2. Netflix Clone**
-
-_Responsive streaming platform clone with dynamic content_
-
-- **Technologies**: React, CSS, JavaScript, REST API
-- **Features**: TMDB API integration, trailer playback, responsive design
-- **Live Demo**: [View Project](https://seidnetflix.vercel.app/)
-- **GitHub**: [View Code](https://github.com/Seid-Sualeh/My-Ntflix-Project)
-
-### **3. Amazon Full-Stack Clone**
-
-_Complete e-commerce platform with frontend and backend_
-
-- **Technologies**: React, Express.js, Node.js, Firebase, MySQL
-- **Features**: RESTful API, Firebase authentication, real-time updates
-- **Live Demo**: [View Project](https://seidamazoneclone.vercel.app/)
-- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Amazon__Frontend)
-
-### **4. Apple Website Clone**
-
-_Modern Apple website replica with dynamic content_
-
-- **Technologies**: React, Node.js, Express.js, MySQL, REST API
-- **Features**: YouTube API integration, smooth animations, responsive UI
-- **Live Demo**: [View Project](https://seidappleclone.vercel.app/)
-- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Apple-Frontend)
-
-### **5. Evangadi Forum**
-
-_AI-powered discussion platform for educational content_
-
-- **Technologies**: React.js, Node.js, Express.js, MySQL, AI Integration
-- **Features**: User authentication, AI-powered suggestions, responsive design
+### **3. Evangadi Forum**
+*AI-integrated learning and discussion forum*
+- **Technologies**: React.js, Node.js, MySQL, OpenAI API
+- **Features**: Secure JWT authentication, QA posts, and AI-powered recommendations for supplementary study videos and resources.
 - **Live Demo**: [View Project](https://seidforum.vercel.app)
 - **GitHub**: [View Code](https://github.com/Seid-Sualeh/Evangadi_Forum_Front-end)
-
-### **6. Weather Forecast App**
-
-_Real-time weather application with location-based forecasts_
-
-- **Technologies**: React.js, CSS, RESTful API
-- **Features**: Live weather data, location search, responsive design
-- **Live Demo**: [View Project](https://seid-weather-app.vercel.app/)
-- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Weather-App)
 
 ---
 
 ## 🎓 Education & Certifications
 
-### **Professional Training**
-
-- **Full-Stack Web Development** (2025) - _Evangadi Tech Scholarship Program_
-- **Medical Laboratory Science** (2016-2021) - _Wollo University_
-
-### **Ongoing Learning**
-
-- **MERN Stack Development & AI Exploration** - _O'Reilly Media_ (2024-Present)
-- **Full-Stack Development Program** - _Gebeya Talent Academy_ (2024-Present)
-- **Professional Software Engineering** - _Safaricom Talent Cloud X DIY Program_ (2024-Present)
+- **Full-Stack Web Development** | *Evangadi Tech Scholarship Program* (2025)
+- **Medical Laboratory Science (BSc)** | *Wollo University* (2016-2021)
+- **MERN Stack & AI Integration** | *O'Reilly Media* (Ongoing)
+- **Full-Stack Development Track** | *Gebeya Talent Academy* (Ongoing)
+- **Cloud Computing & Web Development** | *Safaricom Talent Cloud* (Ongoing)
 
 ---
 
 ## 💼 Professional Experience
 
-### **Full-Stack Web Developer** | _Freelance & Personal Projects_ (2025 - Present)
+### **Full-Stack Web Developer** | *Freelance & Personal Projects* (2025 - Present)
+- Architected and delivered 11+ production-grade web applications.
+- Optimized frontend load times under 2s and built secure REST APIs with JWT authentication.
 
-- Designed and developed responsive web applications using the MERN stack
-- Built dynamic projects including Netflix, Amazon, and Apple clones
-- Implemented RESTful APIs and optimized UI/UX for performance and accessibility
+### **Web Development Trainee** | *Evangadi Tech Scholarship Program* (2025)
+- Mastered full-stack engineering, clean database schemas, and team-based version control workflows.
 
-### **Web Development Trainee** | _Evangadi Tech Scholarship Program_ (Mar 2025 - Oct 2025)
-
-- Completed intensive full-stack development training program
-- Learned modern technologies including HTML5, CSS3, JavaScript (ES6+), React, Node.js, Express, and MySQL
-- Collaborated on team projects and practiced version control using Git and GitHub
-
-### **Medical Laboratory Technologist** | _Bati Primary Hospital_ (2021 - Present)
-
-- Applied analytical and problem-solving skills in healthcare settings
-- Gained experience in teamwork, data accuracy, and process optimization
-- Developed skills in project management and attention to detail
+### **Medical Laboratory Technologist** | *Bati Primary Hospital* (2021 - Present)
+- Performed complex diagnostic analytics, process optimizations, and systematic laboratory management.
 
 ---
 
-## 🏆 Key Achievements
+## 🚀 Getting Started
 
-- ✅ **Completed** comprehensive full-stack web development training
-- ✅ **Built** 9+ real-world projects showcasing diverse skills
-- ✅ **Integrated** multiple APIs and third-party services
-- ✅ **Developed** responsive designs for all device types
-- ✅ **Created** AI-powered features in forum application
-- ✅ **Maintained** clean, scalable code architecture
-- ✅ **Demonstrated** continuous learning and adaptation to new technologies
+### **Prerequisites**
+- Node.js (version 18 or higher)
+- npm or yarn
+
+### **Installation & Setup**
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Seid-Sualeh/Seid-Portfolio.git
+   cd Seid-Portfolio/seid
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
+
+---
+
+## 📂 Directory Structure
+```
+Seid-Portfolio/
+├── assets/                 # Global media & resume assets
+│   ├── image/             # Portfolio profile & project snapshots
+│   └── pdf/               # SEID SUALEH RESUME.pdf
+└── seid/
+    ├── index.html          # Main HTML5 entry point
+    ├── src/
+    │   ├── App.css        # New Design System Tokens & global utility classes
+    │   ├── App.jsx        # Root component
+    │   ├── index.css      # Core framework variables
+    │   ├── components/    # Overhauled components (header, hero, about, timeline...)
+    │   └── pages/         # Page templates
+    └── package.json        # Dependencies & compilation scripts
+```
 
 ---
 
@@ -190,126 +186,20 @@ _Real-time weather application with location-based forecasts_
 
 **Let's build something amazing together!**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seid-sualeh)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/seid-sualih-92b938370/)
 [![Email](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:Plshireseid@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Seid-Sualeh)
 [![Phone](https://img.shields.io/badge/Phone-+251%20929%20075%20365-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](tel:+251929075365)
 
 **Location**: Addis Ababa, Ethiopia  
-**Availability**: Open to opportunities and collaborations
+**Availability**: Open to full-time remote developer positions, freelance contracts, and software engineering internships.
 
 </div>
 
 ---
 
-## 🚀 Getting Started
-
-### **Portfolio Setup**
-
-This portfolio is built with modern web technologies and is ready to deploy.
-
-#### **Prerequisites**
-
-- Node.js (version 16 or higher)
-- npm or yarn package manager
-
-#### **Installation & Setup**
-
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/Seid-Sualeh/Seid-Portfolio.git
-   cd Seid-Portfolio/seid
-   ```
-
-2. **Install dependencies**
-
-   ```bash
-   npm install
-   ```
-
-3. **Start development server**
-
-   ```bash
-   npm run dev
-   ```
-
-4. **Open your browser**
-   ```
-   http://localhost:5173
-   ```
-
-#### **Available Scripts**
-
-- `npm run dev` - Start development server with hot reload
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run lint` - Run ESLint for code quality
-
-#### **Project Structure**
-
-```
-seid/
-├── public/                 # Static assets
-│   └── assets/
-│       └── image/         # Project images
-├── src/
-│   ├── components/        # React components
-│   │   ├── about/        # About section
-│   │   ├── contact/      # Contact form
-│   │   ├── education/    # Education section
-│   │   ├── experience/   # Work experience
-│   │   ├── header/       # Navigation header
-│   │   ├── hero/         # Hero section
-│   │   ├── loader/       # Loading component
-│   │   ├── projects/     # Projects showcase
-│   │   ├── service/      # Services section
-│   │   └── testimonial/  # Testimonials
-│   ├── hooks/            # Custom React hooks
-│   ├── pages/           # Page components
-│   ├── App.jsx          # Main app component
-│   ├── main.jsx         # App entry point
-│   └── index.css        # Global styles
-├── package.json         # Project dependencies
-├── vite.config.js       # Vite configuration
-└── README.md           # Project documentation
-```
-
----
-
-## 🤝 Contributing
-
-I welcome contributions and suggestions! If you have ideas for improvements or find any issues:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
-
-## 🙏 Acknowledgments
-
-- **Evangadi Networks** - For the comprehensive full-stack development training
-- **Wollo University** - For the solid foundation in medical laboratory science
-- **Open Source Community** - For the incredible tools and libraries that make development possible
-- **Healthcare Community** - For inspiring the bridge between technology and healthcare
-
----
-
 <div align="center">
 
-**⭐ Star this repository if you find it helpful! ⭐**
-
 _Built with ❤️ by Seid Sualeh_
-
-![Visitors](https://profile-counter.glitch.me/Seid-Sualeh/count.svg)
 
 </div>
