@@ -44,7 +44,7 @@ const Typewriter = ({
   }, [currentText, isDeleting, textIndex, texts, typingSpeed, deletingSpeed, pauseTime]);
 
   return (
-    <span className="typewriter-text gradient-text">
+    <span className="typewriter-text">
       {currentText}
       <span className="typewriter-cursor">|</span>
     </span>
