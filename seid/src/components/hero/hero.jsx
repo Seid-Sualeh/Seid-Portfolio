@@ -35,7 +35,7 @@ const Hero = () => {
   return (
     <section id="hero" className="hero section dark-background">
       {/* Background Image */}
-      <img src={banner} alt="Seid Sualeh — Full-Stack Software Engineer" className="hero-bg-img" />
+      <img src={banner} alt="Seid Sualeh — Full-Stack Web Developer" className="hero-bg-img" />
       {/* Overlay */}
       <div className="hero-overlay"></div>
 

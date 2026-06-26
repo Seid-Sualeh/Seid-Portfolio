@@ -147,11 +147,11 @@ const About = () => {
           {/* Image Column */}
           <div className="about-image-col animate-on-scroll from-left">
             <div className="about-image-wrapper">
-              <img src={image} alt="Seid Sualeh — Full-Stack Software Engineer" />
+              <img src={image} alt="Seid Sualeh — Full-Stack Web Developer" />
               {/* Floating badges */}
               <div className="about-badge badge-top-right">
                 <i className="fab fa-react"></i>
-                <span>MERN Engineer</span>
+                <span>MERN Developer</span>
               </div>
               <div className="about-badge badge-bottom-left">
                 <i className="fa-solid fa-code-branch"></i>
@@ -164,10 +164,10 @@ const About = () => {
           <div className="about-text-col">
             <div className="animate-on-scroll from-right">
               <h3 className="about-greeting">
-                Full-Stack Software Engineer &amp; Systems Thinker
+                Full-Stack Web Developer &amp; Systems Thinker
               </h3>
               <p className="about-bio">
-                I'm a <strong>production-ready Full-Stack Software Engineer</strong>{" "}
+                I'm a <strong>production-ready Full-Stack Web Developer</strong>{" "}
                 specializing in React, Node.js, and AI-integrated systems. I've shipped
                 12+ applications with real authentication, REST APIs, database design,
                 role-based access control, and cloud deployment — not just tutorials or
