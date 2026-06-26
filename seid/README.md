@@ -20,11 +20,10 @@
 This repository contains the premium, modern, and professional portfolio website for **Seid Sualeh**. Rebuilt in 2026, it is designed with top-tier SaaS aesthetics, elegant animations, and premium coding practices to command trust with recruiters and clients within 5 seconds.
 
 ### ✨ Premium Features Added:
-- **🎨 Global Design System**: Built with modern CSS variables, fluid responsive typography (Space Grotesk & Inter), dark/light mode tokens, and premium glassmorphic layouts.
 - **✨ Code Particle Canvas Engine**: Renders a lightweight, interactive canvas drawing floating monospace code tokens (`< />`, `=>`, `{}`) reacting behind the header and hero sections.
-- **📈 Recruiter-Focused Credibility**: Integrated an availability badge and a credibility stats bar displaying `11+ Projects Shipped` and `Open to Work` immediately on the Hero block.
+- **📈 Recruiter-Focused Credibility**: Integrated an availability badge and a credibility stats bar displaying `12+ Projects Shipped` and `Open to Work` immediately on the Hero block.
 - **⏱️ Alternating Timelines**: Transformed the Education and Experience sections into highly polished vertical timelines featuring status labels, color-coded markers, and scroll-triggered animations.
-- **🗂️ Project Tag Filtering**: Supports instant filtering (All, Full-Stack, Frontend) of Seid's 11+ production-grade projects.
+- **🗂️ Project Tag Filtering**: Supports instant filtering (All, Full-Stack, Frontend) of Seid's 12+ production-grade projects.
 
 ---
 
@@ -84,23 +83,30 @@ My background in Medical Laboratory Science brings a rigorous attention to detai
 
 ## 🚀 Featured Projects
 
-### **1. Hussu Drug Store**
+### **1. MediCare AI — Hospital Management System**
+*Full-stack hospital management platform with AI-powered patient triage*
+- **Technologies**: React, Node.js, Express, MySQL, AI Integration, RBAC
+- **Features**: Patient triage, multi-role dashboards (Admin, Doctor, Patient), appointment scheduling, and real-time medical logs.
+- **Live Demo**: [View Project](https://medicares-ai.netlify.app/)
+- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Hospital-Managment-System)
+
+### **2. Hussu Drug Store**
 *Full-stack pharmacy inventory and management system*
-- **Technologies**: React, Node.js, Express, MySQL
+- **Technologies**: React, Node.js, Express, MySQL, JWT, RBAC
 - **Features**: Live sales dashboard, stock levels tracking, supplier directory, and role-based access control.
 - **Live Demo**: [View Project](https://hussu-drug-store.vercel.app/)
 - **GitHub**: [View Code](https://github.com/Seid-Sualeh/Hussu-Drug-Store)
 
-### **2. Brother's Kitchenware**
+### **3. Brother's Kitchenware**
 *Premium responsive E-Commerce platform*
-- **Technologies**: React, Node.js, Express, MySQL
+- **Technologies**: React, Node.js, Express, MySQL, REST API
 - **Features**: Product catalog filtering, user authentication, customer checkout cart, and multi-language support.
 - **Live Demo**: [View Project](https://brothers-kitchenware.netlify.app)
 - **GitHub**: [View Code](https://github.com/Seid-Sualeh/Brothers-Kitchenware)
 
-### **3. Evangadi Forum**
+### **4. Evangadi Forum**
 *AI-integrated learning and discussion forum*
-- **Technologies**: React.js, Node.js, MySQL, OpenAI API
+- **Technologies**: React.js, Node.js, MySQL, OpenAI API, JWT
 - **Features**: Secure JWT authentication, QA posts, and AI-powered recommendations for supplementary study videos and resources.
 - **Live Demo**: [View Project](https://seidforum.vercel.app)
 - **GitHub**: [View Code](https://github.com/Seid-Sualeh/Evangadi_Forum_Front-end)
@@ -120,7 +126,7 @@ My background in Medical Laboratory Science brings a rigorous attention to detai
 ## 💼 Professional Experience
 
 ### **Full-Stack Web Developer** | *Freelance & Personal Projects* (2025 - Present)
-- Architected and delivered 11+ production-grade web applications.
+- Architected and delivered 12+ production-grade web applications.
 - Optimized frontend load times under 2s and built secure REST APIs with JWT authentication.
 
 ### **Web Development Trainee** | *Evangadi Tech Scholarship Program* (2025)

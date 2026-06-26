@@ -165,25 +165,26 @@
   background: rgba(255,255,255,0.2);
 }
 
-/* Featured badge */
-.featured-badge {
+/* Project badge (dynamic color via inline style) */
+.project-badge {
   position: absolute;
   top: 12px;
   left: 12px;
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 0.25rem 0.625rem;
-  background: linear-gradient(135deg, var(--indigo-500), var(--violet-500));
+  padding: 0.25rem 0.7rem;
   color: #fff;
   font-size: 0.7rem;
   font-weight: 700;
   border-radius: 99px;
-  letter-spacing: 0.03em;
-  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+  letter-spacing: 0.04em;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  text-transform: uppercase;
 }
 
-.featured-badge i { font-size: 0.6rem; }
+.project-badge i { font-size: 0.6rem; }
 
 /* ── Card Info ── */
 .project-info {

@@ -246,10 +246,77 @@
   .about-image-wrapper { width: 220px; height: 270px; }
   .badge-top-right { right: -10px; }
   .badge-bottom-left { left: -10px; }
+  .credentials-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
   .skills-grid { grid-template-columns: 1fr; gap: 1.25rem; }
   .about-cta-row { flex-direction: column; }
   .about-cta-row a { justify-content: center; }
+}
+
+/* ── Credential Cards ── */
+.credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.875rem;
+  margin-bottom: 2rem;
+}
+
+.credential-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875rem;
+  padding: 1rem 1.125rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  transition: all 0.25s var(--ease-out);
+  position: relative;
+  overflow: hidden;
+}
+
+.credential-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: var(--cred-color, var(--indigo-500));
+  border-radius: 3px 0 0 3px;
+  opacity: 0.7;
+}
+
+.credential-card:hover {
+  border-color: var(--cred-color, var(--indigo-500));
+  background: rgba(99, 102, 241, 0.04);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.credential-icon-box {
+  width: 36px;
+  height: 36px;
+  min-width: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(99, 102, 241, 0.08);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+}
+
+.credential-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.credential-desc {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  line-height: 1.5;
 }

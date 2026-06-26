@@ -14,17 +14,28 @@ const Hero = () => {
     }
   };
 
+  const scrollToProjects = (e) => {
+    e.preventDefault();
+    const section = document.querySelector("#projects");
+    if (section) {
+      const headerHeight = 72;
+      window.scrollTo({ top: section.offsetTop - headerHeight, behavior: "smooth" });
+    }
+  };
+
   const stats = [
-    { value: "11+", label: "Projects Shipped" },
-    { value: "5+", label: "Technologies Mastered" },
-    { value: "1+", label: "Year Experience" },
-    { value: "Open", label: "To Work" },
+    { value: "12+", label: "Projects Shipped" },
+    { value: "3+", label: "Years Coding" },
+    { value: "100%", label: "Remote-Ready" },
+    { value: "Open", label: "to Hire" },
   ];
+
+  const credPills = ["React.js", "Node.js", "REST APIs", "JWT Auth", "AI Integration", "MySQL"];
 
   return (
     <section id="hero" className="hero section dark-background">
       {/* Background Image */}
-      <img src={banner} alt="Seid Sualeh — Full-Stack Developer" className="hero-bg-img" />
+      <img src={banner} alt="Seid Sualeh — Full-Stack Software Engineer" className="hero-bg-img" />
       {/* Overlay */}
       <div className="hero-overlay"></div>
 
@@ -33,7 +44,7 @@ const Hero = () => {
           {/* Availability pill */}
           <div className="hero-availability">
             <span className="availability-dot"></span>
-            Available for freelance &amp; full-time
+            Open to Hire — Remote &amp; International
           </div>
 
           <h1 className="hero-title">
@@ -45,22 +56,29 @@ const Hero = () => {
           </h3>
 
           <p className="hero-desc">
-            I build fast, beautiful, and scalable web applications that deliver
-            exceptional user experiences — from pixel-perfect frontends to robust
-            backend systems.
+            I am a full-stack web developer — from database schema to
+            deployed UI — with security, performance, and scalability built in
+            from day one.
           </p>
+
+          {/* Credibility pills */}
+          <div className="hero-cred-pills">
+            {credPills.map((pill, i) => (
+              <span key={i} className="hero-cred-pill">{pill}</span>
+            ))}
+          </div>
 
           <div className="cta-buttons">
             <a
-              href="../../../assets/pdf/SEID SUALEH RESUME.pdf"
+              href="#projects"
               className="btn-primary"
-              download="SEID SUALEH RESUME.pdf"
+              onClick={scrollToProjects}
             >
-              <i className="fa-solid fa-download"></i>
-              Download Resume
+              <i className="fa-solid fa-folder-open"></i>
+              View My Work
             </a>
             <a href="#contact" className="btn-secondary hero-contact-btn" onClick={scrollToContact}>
-              Let's Talk
+              Start a Project
               <i className="fa-solid fa-arrow-right"></i>
             </a>
           </div>
@@ -71,7 +89,7 @@ const Hero = () => {
               href="https://github.com/Seid-Sualeh"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="GitHub"
+              aria-label="GitHub Profile"
               className="hero-social-link"
             >
               <i className="fab fa-github"></i>
@@ -80,10 +98,18 @@ const Hero = () => {
               href="https://www.linkedin.com/in/seid-sualih-92b938370/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn"
+              aria-label="LinkedIn Profile"
               className="hero-social-link"
             >
               <i className="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="../../../assets/pdf/SEID SUALEH RESUME.pdf"
+              className="hero-social-link"
+              download="SEID SUALEH RESUME.pdf"
+              aria-label="Download Resume"
+            >
+              <i className="fa-solid fa-file-arrow-down"></i>
             </a>
           </div>
         </div>

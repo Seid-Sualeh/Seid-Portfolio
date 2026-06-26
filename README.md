@@ -22,7 +22,7 @@ This repository hosts the source code for the premium, modern, and professional 
 ### ✨ Premium Features Highlights:
 - **🎨 Modern Design System**: Built with centralized CSS variables, responsive typography using **Space Grotesk** and **Inter**, and elegant glassmorphism effects.
 - **✨ Code Particle Background Engine**: Includes a custom, performance-friendly HTML5 Canvas particle engine rendering floating monospace developer tokens (`< />`, `=>`, `{}`) reacting to screen bounds.
-- **📈 Recruiter-Focused Positioning**: Features an availability status indicator and a credibility stats bar (`11+ Projects Shipped`, `Open to Work`) to build immediate confidence.
+- **📈 Recruiter-Focused Positioning**: Features an availability status indicator and a credibility stats bar (`12+ Projects Shipped`, `Open to Work`) to build immediate confidence.
 - **⏱️ Alternating Vertical Timelines**: Transforms the Education and Experience sections into clean timeline grids with color-coded status pills (`Completed`, `In Progress`) and scroll-triggered fade animations.
 - **🗂️ Project Filtering**: Supports instant client-side tag filtering (All, Full-Stack, Frontend) for all showcase items.
 
@@ -84,7 +84,22 @@ My prior experience as a Medical Laboratory Technologist at Bati Primary Hospita
 
 ## 🚀 Featured Projects
 
-### **1. Hussu Drug Store**
+### **1. MediCare AI — Hospital Management System**
+
+<p>
+  <a href="https://medicares-ai.netlify.app/" target="_blank" rel="noopener noreferrer">
+    <img src="seid/assets/image/medicare-ai.png" alt="MediCare AI" width="260" style="margin:8px;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.15)" />
+  </a>
+</p>
+
+*Full-stack hospital management platform with AI-powered patient triage*
+
+- **Technologies**: React, Node.js, Express, MySQL, AI Integration, RBAC
+- **Features**: Patient triage, multi-role dashboards (Admin, Doctor, Patient), appointment scheduling, and real-time medical logs.
+- **Live Demo**: [View Project](https://medicares-ai.netlify.app/)
+- **GitHub**: [View Code](https://github.com/Seid-Sualeh/Hospital-Managment-System)
+
+### **2. Hussu Drug Store**
 
 <p>
   <a href="https://hussu-drug-store.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -94,12 +109,12 @@ My prior experience as a Medical Laboratory Technologist at Bati Primary Hospita
 
 *Full-stack pharmacy inventory and management system* 
 
-- **Technologies**: React, Node.js, Express, MySQL
+- **Technologies**: React, Node.js, Express, MySQL, JWT, RBAC
 - **Features**: Live sales dashboard, stock levels tracking, supplier directory, and role-based access control.
 - **Live Demo**: [View Project](https://hussu-drug-store.vercel.app/)
 - **GitHub**: [View Code](https://github.com/Seid-Sualeh/Hussu-Drug-Store)
 
-### **2. Brother's Kitchenware**
+### **3. Brother's Kitchenware**
 
 <p>
   <a href="https://brothers-kitchenware.netlify.app" target="_blank" rel="noopener noreferrer">
@@ -109,12 +124,12 @@ My prior experience as a Medical Laboratory Technologist at Bati Primary Hospita
 
 *Premium responsive E-Commerce platform*
 
-- **Technologies**: React, Node.js, Express, MySQL
+- **Technologies**: React, Node.js, Express, MySQL, REST API
 - **Features**: Product catalog filtering, user authentication, customer checkout cart, and multi-language support.
 - **Live Demo**: [View Project](https://brothers-kitchenware.netlify.app)
 - **GitHub**: [View Code](https://github.com/Seid-Sualeh/Brothers-Kitchenware)
 
-### **3. Evangadi Forum**
+### **4. Evangadi Forum**
 
 <p>
   <a href="https://seidforum.vercel.app" target="_blank" rel="noopener noreferrer">
@@ -124,12 +139,12 @@ My prior experience as a Medical Laboratory Technologist at Bati Primary Hospita
 
 *AI-integrated learning and discussion forum*
 
-- **Technologies**: React.js, Node.js, MySQL, OpenAI API
+- **Technologies**: React.js, Node.js, MySQL, OpenAI API, JWT
 - **Features**: Secure JWT authentication, QA posts, and AI-powered recommendations for supplementary study resources.
 - **Live Demo**: [View Project](https://seidforum.vercel.app)
 - **GitHub**: [View Code](https://github.com/Seid-Sualeh/Evangadi_Forum_Front-end)
 
-### **4. Abe Garage**
+### **5. Abe Garage**
 
 <p>
   <a href="https://seid-abe-garage.netlify.app" target="_blank" rel="noopener noreferrer">
@@ -139,8 +154,8 @@ My prior experience as a Medical Laboratory Technologist at Bati Primary Hospita
 
 *Service management system for automotive repair*
 
-- **Technologies**: React.js, Node.js, Express.js, MySQL
-- **Features**: Vehicle tracking, service scheduling, and maintenance logs.
+- **Technologies**: React.js, Node.js, Express.js, MySQL, JWT
+- **Features**: Vehicle tracking, service scheduling, technician dashboards, and maintenance logs.
 - **Live Demo**: [View Project](https://seid-abe-garage.netlify.app)
 - **GitHub**: [View Code](https://github.com/Seid-Sualeh/Abe-Garage-Project)
 
@@ -151,6 +166,9 @@ My prior experience as a Medical Laboratory Technologist at Bati Primary Hospita
 ### 📸 Project Gallery
 
 <p>
+   <a href="https://medicares-ai.netlify.app/" target="_blank" rel="noopener noreferrer">
+      <img src="seid/assets/image/medicare-ai.png" alt="MediCare AI" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
+   </a>
    <a href="https://hussu-drug-store.vercel.app/" target="_blank" rel="noopener noreferrer">
       <img src="seid/assets/image/hussuDrug.png" alt="Hussu Drug Store" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
    </a>
@@ -163,11 +181,11 @@ My prior experience as a Medical Laboratory Technologist at Bati Primary Hospita
    <a href="https://seidforum.vercel.app" target="_blank" rel="noopener noreferrer">
       <img src="seid/assets/image/evangadi forum.png" alt="Evangadi Forum" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
    </a>
+</p>
+<p>
    <a href="https://seid-blog-app.vercel.app/" target="_blank" rel="noopener noreferrer">
       <img src="seid/assets/image/blog.png" alt="Blog App" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
    </a>
-</p>
-<p>
    <a href="https://seidnetflix.vercel.app/" target="_blank" rel="noopener noreferrer">
       <img src="seid/assets/image/netflix.jpg" alt="Netflix Clone" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
    </a>
@@ -179,9 +197,6 @@ My prior experience as a Medical Laboratory Technologist at Bati Primary Hospita
    </a>
    <a href="https://seid-image-generator-website.vercel.app/" target="_blank" rel="noopener noreferrer">
       <img src="seid/assets/image/computer size.png" alt="Alpaca Image Generator" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
-   </a>
-   <a href="https://seid-weather-app.vercel.app/" target="_blank" rel="noopener noreferrer">
-      <img src="seid/assets/image/desktop-size.png" alt="Weather App" width="180" style="margin:8px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,0.15)" />
    </a>
 </p>
 
@@ -204,7 +219,7 @@ My prior experience as a Medical Laboratory Technologist at Bati Primary Hospita
 ## 💼 Professional Experience
 
 ### **Full-Stack Web Developer** | *Freelance & Personal Projects* (2025 - Present)
-- Shipped 11+ full-stack web applications with optimized frontend and REST APIs.
+- Shipped 12+ full-stack web applications with optimized frontend and REST APIs.
 
 ### **Web Development Trainee** | *Evangadi Tech Scholarship Program* (2025)
 - Mastered full-stack engineering and team Git/GitHub workflows.

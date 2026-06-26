@@ -4,20 +4,21 @@ import "./experience.css";
 function Experience() {
   const experiences = [
     {
-      title: "Full-Stack Web Developer",
+      title: "Full-Stack Software Engineer",
       date: "2025 – Present",
-      company: "Freelance & Personal Projects",
+      company: "Freelance & Independent Projects",
       type: "Freelance",
       typeColor: "type-freelance",
       icon: "fa-solid fa-laptop-code",
       iconColor: "#6366f1",
       achievements: [
-        "Designed and shipped 11+ full-stack web applications using the MERN stack",
-        "Built pharmacy management system, e-commerce platforms, and AI-integrated forum",
-        "Implemented RESTful APIs, authentication flows, and optimized database schemas",
-        "Achieved sub-2s load times through performance optimization and lazy loading",
+        "Engineered 12+ production-grade full-stack applications — from database schema to cloud deployment",
+        "Implemented RBAC, JWT authentication, REST APIs, and SQL query optimization across all projects",
+        "Built AI-integrated features using OpenAI API — shipped in the Evangadi Forum and MediCare AI projects",
+        "Achieved sub-2s load times via lazy loading, code splitting, and database indexing strategies",
+        "Deployed on Vercel, Netlify, and Render with CI/CD workflows and environment configuration",
       ],
-      technologies: ["React.js", "Node.js", "Express.js", "MySQL", "MongoDB", "REST API", "JWT"],
+      technologies: ["React.js", "Node.js", "Express.js", "MySQL", "MongoDB", "REST API", "JWT", "OpenAI API"],
     },
     {
       title: "Web Development Trainee",
@@ -28,12 +29,13 @@ function Experience() {
       icon: "fa-solid fa-graduation-cap",
       iconColor: "#10b981",
       achievements: [
-        "Selected for competitive full-stack scholarship among hundreds of applicants",
-        "Mastered HTML5, CSS3, JavaScript ES6+, React, Node.js, and MySQL",
-        "Collaborated on team projects using Git/GitHub and agile workflows",
-        "Delivered the Evangadi Forum project with AI-powered learning suggestions",
+        "Awarded a competitive full-stack scholarship among hundreds of applicants based on aptitude",
+        "Mastered HTML5, CSS3, JavaScript ES6+, React, Node.js, Express.js, and MySQL in an intensive program",
+        "Collaborated on team projects using Git/GitHub and agile workflows with daily standups",
+        "Delivered the Evangadi Forum capstone — a live AI-powered Q&A platform used by real students",
+        "Gained production mindset: error handling, input validation, environment variables, and API security",
       ],
-      technologies: ["HTML5", "CSS3", "JavaScript", "React", "Node.js", "MySQL", "Git"],
+      technologies: ["HTML5", "CSS3", "JavaScript", "React", "Node.js", "MySQL", "Git", "REST API"],
     },
     {
       title: "Medical Laboratory Technologist",
@@ -44,12 +46,13 @@ function Experience() {
       icon: "fa-solid fa-microscope",
       iconColor: "#f59e0b",
       achievements: [
-        "Applied rigorous analytical and diagnostic skills in a high-stakes healthcare environment",
-        "Developed strong attention to detail, data accuracy, and process optimization habits",
-        "Gained cross-functional teamwork experience directly applicable to software engineering",
-        "Managed and interpreted large datasets — a skill set now leveraged in backend development",
+        "Applied high-stakes diagnostic analysis in a clinical environment — zero margin for error mindset",
+        "Managed and interpreted large diagnostic datasets — directly transferable to backend data modeling",
+        "Developed disciplined processes for quality control and systematic troubleshooting",
+        "Cross-functional collaboration with doctors, nurses, and administrators — agile teamwork in practice",
+        "This analytical background gives my software a precision and rigor that typical bootcamp grads lack",
       ],
-      technologies: ["Data Analysis", "Process Optimization", "Teamwork", "Critical Thinking"],
+      technologies: ["Data Analysis", "Process Optimization", "Critical Thinking", "Systems Thinking", "Documentation"],
     },
   ];
 

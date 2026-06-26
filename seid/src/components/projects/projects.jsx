@@ -1,16 +1,17 @@
 import React, { useState, useEffect } from "react";
 import "./project.css";
-import netflix from "../../../assets/image/netflix.jpg";
-import amazon from "../../../assets/image/amazon.jpg";
-import apple from "../../../assets/image/apple.png";
+import medicareAi from "../../../assets/image/medicare-ai.png";
+import hussuDrug from "../../../assets/image/hussuDrug.png";
+import kitchineware from "../../../assets/image/kitchineware.jpg";
 import forum from "../../../assets/image/evangadi forum.png";
 import abegarage from "../../../assets/image/abe garage.jpg";
+import appointmentApp from "../../../assets/image/Appointment.jpg";
+import blogApp from "../../../assets/image/blog.png";
+import amazon from "../../../assets/image/amazon.jpg";
+import apple from "../../../assets/image/apple.png";
+import netflix from "../../../assets/image/netflix.jpg";
 import alpaca from "../../../assets/image/computer size.png";
 import weather from "../../../assets/image/desktop-size.png";
-import blogApp from "../../../assets/image/blog.png";
-import appointmentApp from "../../../assets/image/Appointment.jpg";
-import kitchineware from "../../../assets/image/kitchineware.jpg";
-import hussuDrug from "../../../assets/image/hussuDrug.png";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -18,44 +19,63 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Hussu Drug Store",
+      title: "MediCare AI — Hospital Management System",
       description:
-        "Full-stack pharmacy inventory management with dashboard, stock tracking, sales reporting, supplier management, and role-based access control (Admin/Guest).",
-      image: hussuDrug,
-      tags: ["React", "Node.js", "Express", "MySQL"],
+        "Full-stack hospital management platform with AI-powered patient triage, multi-role dashboards (Admin, Doctor, Patient), appointment scheduling, RBAC authentication, and real-time data management — deployed on Netlify.",
+      image: medicareAi,
+      tags: ["React", "Node.js", "Express", "MySQL", "AI Integration", "RBAC"],
       category: "Full-Stack",
       featured: true,
+      badge: "AI-Powered",
+      badgeColor: "#10b981",
+      liveDemo: "https://medicares-ai.netlify.app/",
+      github: "https://github.com/Seid-Sualeh/Hospital-Managment-System",
+    },
+    {
+      title: "Hussu Drug Store",
+      description:
+        "Pharmacy inventory management system with RBAC (Admin/Guest roles), JWT authentication, live stock alerts, sales reporting, and supplier management. Built for a real pharmacy business.",
+      image: hussuDrug,
+      tags: ["React", "Node.js", "Express", "MySQL", "JWT", "RBAC"],
+      category: "Full-Stack",
+      featured: true,
+      badge: "Featured",
+      badgeColor: "#6366f1",
       liveDemo: "https://hussu-drug-store.vercel.app/",
       github: "https://github.com/Seid-Sualeh/Hussu-Drug-Store",
     },
     {
       title: "Brother's Kitchenware",
       description:
-        "E-commerce platform with product browsing, customer authentication, checkout flow, admin dashboard, real-time notifications, and multilingual support.",
+        "Production e-commerce platform with product catalog, customer authentication, checkout flow, admin dashboard, real-time notifications, and multilingual support. Handles real product transactions.",
       image: kitchineware,
-      tags: ["React", "Node.js", "Express", "MySQL"],
+      tags: ["React", "Node.js", "Express", "MySQL", "REST API"],
       category: "Full-Stack",
       featured: true,
+      badge: "E-Commerce",
+      badgeColor: "#f59e0b",
       liveDemo: "https://brothers-kitchenware.netlify.app",
       github: "https://github.com/Seid-Sualeh/Brothers-Kitchenware",
     },
     {
       title: "Evangadi Forum",
       description:
-        "AI-powered discussion platform with authentication, question/answer flows, and AI suggestions for videos, books, and resources per question.",
+        "AI-powered Q&A platform integrating OpenAI API to surface contextually relevant video, book, and resource suggestions per question. Full authentication, threaded discussions, and role-based moderation.",
       image: forum,
-      tags: ["React.js", "Node.js", "MySQL", "AI Integration"],
+      tags: ["React.js", "Node.js", "MySQL", "OpenAI API", "JWT"],
       category: "Full-Stack",
       featured: true,
+      badge: "AI-Powered",
+      badgeColor: "#10b981",
       liveDemo: "https://seidforum.vercel.app",
       github: "https://github.com/Seid-Sualeh/Evangadi_Forum_Front-end",
     },
     {
       title: "Abe Garage",
       description:
-        "Car repair and service management system. Users track vehicles, schedule services, and view maintenance history with a clean responsive UI.",
+        "Vehicle service management system with customer/technician/manager dashboards, work-order lifecycle tracking, vehicle history, and multi-role JWT authentication. Built for a real auto service center.",
       image: abegarage,
-      tags: ["React.js", "Node.js", "Express.js", "MySQL"],
+      tags: ["React.js", "Node.js", "Express.js", "MySQL", "JWT"],
       category: "Full-Stack",
       featured: false,
       liveDemo: "https://seid-abe-garage.netlify.app",
@@ -64,9 +84,9 @@ const Projects = () => {
     {
       title: "My Appointment App",
       description:
-        "Appointment scheduling with calendar integration, user authentication, real-time availability, and booking management.",
+        "Appointment scheduling system with calendar integration, real-time availability management, user authentication, and booking confirmation flows. Built with the MERN stack.",
       image: appointmentApp,
-      tags: ["React", "Node.js", "Express", "MongoDB"],
+      tags: ["React", "Node.js", "Express", "MongoDB", "JWT"],
       category: "Full-Stack",
       featured: false,
       liveDemo: "https://my-appointment-app-eta.vercel.app/",
@@ -75,9 +95,9 @@ const Projects = () => {
     {
       title: "Blog App",
       description:
-        "Full-stack blog platform with user auth, CRUD for posts, rich text editing, and a clean reader/writer interface.",
+        "Full-stack blogging platform with user authentication, rich text post creation, CRUD operations, comment system, and a clean reader/writer interface powered by a REST API.",
       image: blogApp,
-      tags: ["React.js", "Node.js", "Express.js", "REST API"],
+      tags: ["React.js", "Node.js", "Express.js", "REST API", "JWT"],
       category: "Full-Stack",
       featured: false,
       liveDemo: "https://seid-blog-app.vercel.app/",
@@ -86,9 +106,9 @@ const Projects = () => {
     {
       title: "Amazon Clone",
       description:
-        "Full-stack Amazon replica with React frontend, Firebase authentication, Express/Node.js backend, and real-time data updates.",
+        "Full-stack Amazon replica with product browsing, Firebase authentication, cart management, and Node.js/Express backend. Demonstrates full e-commerce user flow with real-time data.",
       image: amazon,
-      tags: ["React", "Firebase", "Express", "Node.js"],
+      tags: ["React", "Firebase", "Express", "Node.js", "REST API"],
       category: "Full-Stack",
       featured: false,
       liveDemo: "https://seidamazoneclone.vercel.app/",
@@ -97,9 +117,9 @@ const Projects = () => {
     {
       title: "Apple Website Clone",
       description:
-        "Full-stack Apple website replica that fetches the latest 9 YouTube videos via REST API integration, with smooth animations and responsive UI.",
+        "Apple website replica that fetches the latest 9 YouTube videos via REST API integration, with smooth GSAP-inspired animations and a pixel-accurate responsive layout.",
       image: apple,
-      tags: ["React", "Node.js", "Express.js", "REST API"],
+      tags: ["React", "Node.js", "Express.js", "REST API", "CSS3"],
       category: "Full-Stack",
       featured: false,
       liveDemo: "https://seidappleclone.vercel.app/",
@@ -108,9 +128,9 @@ const Projects = () => {
     {
       title: "Netflix Clone",
       description:
-        "Responsive Netflix clone with dynamic content from TMDB API, letting users browse and watch trailers of popular movies and shows.",
+        "Responsive Netflix clone pulling dynamic content from the TMDB API — browse popular films, trending series, and watch trailers. Demonstrates API integration and component architecture.",
       image: netflix,
-      tags: ["React", "CSS", "JavaScript", "REST API"],
+      tags: ["React", "CSS3", "JavaScript", "TMDB API"],
       category: "Frontend",
       featured: false,
       liveDemo: "https://seidnetflix.vercel.app/",
@@ -119,9 +139,9 @@ const Projects = () => {
     {
       title: "Weather Forecast App",
       description:
-        "Real-time weather app with responsive design, smooth animations, and live data from a weather API for any location worldwide.",
+        "Real-time weather application with smooth location search, animated weather icons, and live data from a weather API for any city worldwide. Fully responsive design.",
       image: weather,
-      tags: ["React.js", "CSS", "REST API"],
+      tags: ["React.js", "CSS3", "Weather API"],
       category: "Frontend",
       featured: false,
       liveDemo: "https://seid-weather-app.vercel.app/",
@@ -130,9 +150,9 @@ const Projects = () => {
     {
       title: "Alpaca Image Generator",
       description:
-        "Fun alpaca illustration generator with custom options and a user-friendly responsive interface.",
+        "Interactive alpaca avatar builder where users customize appearance from multiple options. Demonstrates DOM manipulation, state management, and creative UI without a framework.",
       image: alpaca,
-      tags: ["HTML", "CSS", "JavaScript"],
+      tags: ["HTML5", "CSS3", "Vanilla JavaScript"],
       category: "Frontend",
       featured: false,
       liveDemo: "https://seid-image-generator-website.vercel.app/",
@@ -172,7 +192,7 @@ const Projects = () => {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="section-subtitle">
-            11+ production-grade applications spanning full-stack, frontend, and AI integration
+            12+ production-grade applications — full-stack, AI-integrated, and deployed with real users
           </p>
         </div>
 
@@ -230,11 +250,18 @@ const Projects = () => {
                     GitHub
                   </a>
                 </div>
-                {project.featured && (
-                  <div className="featured-badge">
-                    <i className="fa-solid fa-star"></i> Featured
+                {/* Badge */}
+                {project.badge ? (
+                  <div
+                    className="project-badge"
+                    style={{ background: project.badgeColor || "var(--indigo-500)" }}
+                  >
+                    {project.badge === "AI-Powered" && <i className="fa-solid fa-brain"></i>}
+                    {project.badge === "Featured" && <i className="fa-solid fa-star"></i>}
+                    {project.badge === "E-Commerce" && <i className="fa-solid fa-cart-shopping"></i>}
+                    {project.badge}
                   </div>
-                )}
+                ) : null}
               </div>
 
               {/* Info */}
@@ -276,7 +303,7 @@ const Projects = () => {
 
         {/* GitHub CTA */}
         <div className="projects-github-cta">
-          <p>Want to see more of my work?</p>
+          <p>More projects, contributions, and open source work on GitHub</p>
           <a
             href="https://github.com/Seid-Sualeh"
             target="_blank"

@@ -2,15 +2,17 @@ import React, { useState, useEffect } from "react";
 
 const Typewriter = ({
   texts = [
-    "Full-Stack Web Developer",
-    "MERN Stack Developer",
-    "React.js Developer",
+    "React Developer",
+    "Node.js Developer",
+    "Express.js Developer",
+    "MySQL Database Engineer",
+    "Backend Systems Engineer",
     "AI Integration Specialist",
-    "Creative Problem Solver",
+    "Production Deployment Engineer",
   ],
-  typingSpeed = 80,
-  deletingSpeed = 40,
-  pauseTime = 1500,
+  typingSpeed = 75,
+  deletingSpeed = 35,
+  pauseTime = 2000,
 }) => {
   const [currentText, setCurrentText] = useState("");
   const [textIndex, setTextIndex] = useState(0);
@@ -44,10 +46,10 @@ const Typewriter = ({
   }, [currentText, isDeleting, textIndex, texts, typingSpeed, deletingSpeed, pauseTime]);
 
   return (
-    <span className="typewriter-text">
-      {currentText}
+    <>
+      <span className="typewriter-text">{currentText}</span>
       <span className="typewriter-cursor">|</span>
-    </span>
+    </>
   );
 };
 
